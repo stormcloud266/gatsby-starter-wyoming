@@ -21,6 +21,7 @@
   input,
   textarea {
     background-color: #554e51;
+    background-color: lighten($color-bg, 10%);
     border: none;
     border-radius: 2px;
     color: inherit;
@@ -38,7 +39,7 @@
 
   input:focus ~ label,
   textarea:focus ~ label {
-    color: $color-orange;
+    color: $color-primary;
   }
 
 }

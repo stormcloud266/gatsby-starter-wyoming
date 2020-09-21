@@ -1,8 +1,11 @@
-# My Gatsby Template
+# gatsby-starter-wyoming
 
-This is the [Gatsby Default Starter](https://github.com/gatsbyjs/gatsby-starter-default) with additional plugins and components I use on most of my projects. 
+This is a Gatsby.js V2 starter template with additional plugins and components I use on most of my projects. 
 
 This starter was built specifically to get **small business websites** up and running fast with Gatsby. 
+
+Preview
+link
 
 ## Overview
 
@@ -25,9 +28,8 @@ This starter was built specifically to get **small business websites** up and ru
 * [gatsby-plugin-gdpr-cookies](https://www.gatsbyjs.com/plugins/gatsby-plugin-gdpr-cookies/)
 * [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent)
 
-## To use this template
 
-### Install and Develop
+## Installation
 
 `gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming`
 

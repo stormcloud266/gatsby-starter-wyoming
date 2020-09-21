@@ -12,25 +12,25 @@ html {
 
 body {
   background-color: $color-bg;
-  color: #c1bcbe;
+  color: $color-text;
   box-sizing: border-box;
   position: relative;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: $font-family-body;
   font-size: 1.6rem;
   line-height: 1.6;
 }
 
 h1,
 h2 {
-  color: #f1e9ed;
-  font-family: 'Sacramento';
+  color: $color-text-lighter;
+  font-family: $font-family-header;
 }
 
 h1 { font-size: 7.6rem; }
 
 h2 { font-size: 3.6rem; }
 
-h3 { color: #f1e9ed; }
+h3 { color: $color-text-lighter; }
 
 li { list-style: none; }
 
@@ -40,10 +40,10 @@ img {
 
 a { 
   text-decoration: none;
-  color: $color-orange;
+  color: $color-primary;
   transition: color .3s;
 
   &:hover {
-    color: lighten($color-orange, 15%);
+    color: lighten($color-primary, 15%);
   }
 }

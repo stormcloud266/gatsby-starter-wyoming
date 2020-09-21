@@ -1,6 +1,6 @@
 button, 
 .btn {
-  background-color: $color-orange;
+  background-color: $color-primary;
   border: none;
   color: $color-bg;
   cursor: pointer;
@@ -15,6 +15,6 @@ button,
   &:hover,
   &:focus {
     color: $color-bg;
-    background-color: lighten($color-orange, 5%);
+    background-color: lighten($color-primary, 5%);
   }
 }

@@ -1,5 +1,5 @@
 .header {
-  background-color: #1f1d1e;
+  background-color: $color-bg-darkest;
 
   // positioning
   position: fixed;
@@ -22,18 +22,18 @@
     }
 
     a { 
-      color: #c1bcbe;
+      color: $color-text;
       transition: color .2s;
       
       &:hover {
-        color: $color-orange;
+        color: $color-primary;
       }
     }
   }
 
   &__logo {
-    color: $color-orange;
-    font-family: 'Sacramento', serif;
+    color: $color-primary;
+    font-family: $font-family-header;
     font-size: 3.2rem;
     padding: 1.2rem 0;
     position: relative;
@@ -51,7 +51,7 @@
       // overwrite default button styles
       background-color: transparent;
       border: none;
-      color: #f1e9ed;
+      color: $color-text-lighter;
       line-height: 1;
       padding: 1rem;
       
@@ -66,7 +66,7 @@
     }
 
     &__nav {
-      background-color: #1f1d1e;
+      background-color: $color-bg-darkest;
 
       // positioning
       position: absolute;
@@ -117,7 +117,7 @@
 
       a { 
         padding: .8rem 1.4rem;
-        color: #f1e9ed;
+        color: $color-text-lighter;
       }
     }
 
