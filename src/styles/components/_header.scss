@@ -20,7 +20,7 @@
     li { margin-left: 3.6rem }
 
     a { 
-      color: #dbd9da;
+      color: #c1bcbe;
       transition: color .2s;
       
       &:hover { color: $color-orange; }
@@ -28,19 +28,12 @@
   }
 
   &__logo {
-    padding: 1.4rem 0;
+    padding: 1.2rem 0;
     position: relative;
     z-index: 1000;
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     font-family: 'Sacramento', serif;
     color: $color-orange;
-
-    svg {
-      fill: white;
-      width: 100%;
-      max-width: 14rem;
-      display: block;
-    }
   }
 
   #nav-toggle {

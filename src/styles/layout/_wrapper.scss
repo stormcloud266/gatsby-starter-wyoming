@@ -5,4 +5,7 @@
   padding-right: 1.8rem;
   margin-left: auto;
   margin-right: auto;
+
+  &--sm { max-width: 66rem; }
+  &--sm-on-md { @include whenMedium { max-width: 66rem;}}
 }

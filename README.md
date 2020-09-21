@@ -1,6 +1,8 @@
 # My Gatsby Template
 
-[The Gatsby Default Starter](https://github.com/gatsbyjs/gatsby-starter-default) with the additions I use on most of my projects. This starter is especially helpful for small business website projects.
+This is the [Gatsby Default Starter](https://github.com/gatsbyjs/gatsby-starter-default) with additional plugins and components I use on most of my projects. 
+
+This starter was built specifically to get **small business websites** up and running fast with Gatsby. 
 
 ## Overview
 
@@ -25,20 +27,10 @@
 
 ## To use this template
 
-### Clone and Git setup
-
-`git clone git@github.com:stormcloud266/my-gatsby-template.git project-name`
-
-`cd project-name`
-
-`git remote remove origin`
-
-`git remote add origin git@github.com:yourGithub/project-name.git`
-
-`git push origin master -u`
-
 ### Install and Develop
 
-`npm install`
+`gatsby new wyoming https://github.com/stormcloud266/gatsby-starter-wyoming`
+
+`cd wyoming`
 
 `gatsby develop`

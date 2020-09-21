@@ -7,13 +7,13 @@ const NavLinks = ({ specialClass }) => (
       <Link to="/">Home</Link>
     </li>
     <li>
-      <Link to="/page-2">Page Two</Link>
+      <Link to="/#about">About</Link>
     </li>
     <li>
-      <Link to="/">Example</Link>
+      <Link to="/#west">Wild West</Link>
     </li>
     <li>
-      <Link to="/">Example</Link>
+      <Link to="/#adventure">Adventure</Link>
     </li>
     <li>
       <Link to="/">Example</Link>

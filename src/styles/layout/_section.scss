@@ -1,0 +1,9 @@
+.section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  @include whenSmall {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
