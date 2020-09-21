@@ -1,0 +1,29 @@
+.success,
+.error {
+  margin-top: 9rem;
+  display: flex;
+  max-width: 74rem;
+  align-items: center;
+
+  h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 3rem;
+  }
+  p {
+    margin: 1rem 0;
+  }
+  img {
+    max-width: 300px;
+    margin-right: 6rem;
+  }
+
+  @include whenSmall {
+    flex-direction: column;
+  text-align: center;
+
+    img {
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+}

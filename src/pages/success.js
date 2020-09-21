@@ -4,18 +4,18 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import image from "../assets/images/map-undraw.svg"
+import image from "../assets/images/mailbox-undraw.svg"
 
-const NotFoundPage = () => (
+const SuccessPage = () => (
   <Layout>
-    <SEO title="Page Not Found" />
+    <SEO title="Success!" />
     <section className="section wrapper success">
 
       <img src={image} alt=""/>
 
       <div className="success__text">
-        <h1>Page Not Found</h1>
-        <p>The page you are looking for does not exist.</p>
+        <h1>Thank You!</h1>
+        <p>Your email has been successfully sent.</p>
         <Link to="/">Return Home</Link>
       </div>
 
@@ -23,4 +23,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default SuccessPage
