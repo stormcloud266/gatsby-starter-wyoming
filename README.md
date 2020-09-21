@@ -3,12 +3,15 @@
 This is a Gatsby.js V2 starter template with additional plugins and components 
 This starter was built specifically to get **small business websites** up and running fast with Gatsby. 
 
-Preview
-link
+## Preview
+
+[Visit Site](https://gatsby-starter-wyoming.netlify.app/)
 
 ![](https://github.com/stormcloud266/gatsby-starter-wyoming/blob/master/screenshot.gif)
 
 ## Overview
+
+This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-default) and comes with all the default plugins.
 
 **Features**
 * SCSS integration, folder structure, and file imports
@@ -22,8 +25,6 @@ link
 * Offline support
 * Lazy loaded images and background images
 
-Is based on [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-default) and comes with all the default plugins.
-
 **Additional Plugins**
 * [gatsby-plugin-sass](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
 * [node-sass](https://www.npmjs.com/package/node-sass)
@@ -36,6 +37,12 @@ Is based on [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-
 * [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent)
 * [gatsby-plugin-alias-imports](https://www.gatsbyjs.com/plugins/gatsby-plugin-alias-imports/)
 
+## Customization
+
+## Form
+
+## License
+
 
 ## Installation
 
@@ -46,3 +53,8 @@ Is based on [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-
 `cd wyoming-project`
 
 `gatsby develop`
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="tawnee" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000" data-font-color="#000" data-coffee-color="#fff" ></script>
+
+
+![https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png](https://www.buymeacoffee.com/tawnee)
