@@ -23,7 +23,7 @@
       color: #dbd9da;
       transition: color .2s;
       
-      &:hover { color: #e98976; }
+      &:hover { color: $color-orange; }
     }
   }
 
@@ -33,7 +33,7 @@
     z-index: 1000;
     font-size: 3.8rem;
     font-family: 'Sacramento', serif;
-    color: #e98976;
+    color: $color-orange;
 
     svg {
       fill: white;
@@ -54,7 +54,7 @@
       // overwrite default button styles
       color: white;
       border: none;
-      padding: $p-1;
+      padding: 1rem;
       line-height: 1;
       background-color: transparent;
       
@@ -84,7 +84,7 @@
       // transition set up
       opacity: 0;
       visibility: hidden;
-      transition: opacity .2s;
+      transition: all .2s;
 
       &.open {
         opacity: 1;
@@ -109,16 +109,16 @@
     &__nav-list {
       flex-direction: column;
       align-items: center;
-      font-size: $font-3;
+      font-size: 2.8rem;
 
       li {
         margin-left: 0;
-        margin-bottom: $p-6;
+        margin-bottom: 2.8rem;
         opacity: 0;
         transform: translateY(1rem);
       }
 
-      a { padding: $p-1 $p-3; }
+      a { padding: .8rem 1.4rem; }
     }
 
 

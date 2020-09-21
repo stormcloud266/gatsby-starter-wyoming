@@ -17,7 +17,7 @@ const Page2 = ({ data, location }) => (
 
     <section className="wrapper page-2">
       <Img fluid={data.image.childImageSharp.fluid}/>
-      <h2>Page Two</h2>
+      <h2>The Wild West</h2>
       <Link to="/">Go Home</Link>
     </section>
 

@@ -5,8 +5,8 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `My Gatsby Starter`,
-    description: `Gatsby default plus SCSS, web fonts, Google Analytics`,
-    author: `@gatsbyjs`,
+    description: `Gatsby default plus SCSS, web fonts, analytics`,
+    author: `Tawnee Allort`,
     siteUrl: 'https://www.test.com' // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
   },
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Sacramento', 'Kumbh:400']
+          families: ['Sacramento', 'Kumbh Sans:400']
         }
       }
     },

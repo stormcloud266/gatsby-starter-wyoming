@@ -5,7 +5,7 @@
 ## Overview
 
 **Features**
-* SCSS integration, folder structure, and minimal styling
+* SCSS integration, folder structure, file imports, and minimal styling
 * Responsive header component with desktop and mobile nav
 * Minimal footer component
 * SEO component with open graph and Twitter cards

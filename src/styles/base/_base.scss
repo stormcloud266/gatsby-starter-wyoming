@@ -11,13 +11,13 @@ html {
 }
 
 body {
+  background-color: #272526;
   color: #dbd9da;
-  background-color: $color-bg-0;
   box-sizing: border-box;
   position: relative;
-  font-family: 'Kumbh', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.6rem;
-  background-color: #272526;
+  line-height: 1.6;
 }
 
 h1,
@@ -34,15 +34,14 @@ li { list-style: none; }
 
 img {
   width: 100%;
-  max-width: 100%;
 }
 
 a { 
   text-decoration: none;
-  color: #e98976;
+  color: $color-orange;
   transition: color .3s;
 
   &:hover {
-    color: lighten(#e98976, 15%);
+    color: lighten($color-orange, 15%);
   }
 }

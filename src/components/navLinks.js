@@ -10,13 +10,13 @@ const NavLinks = ({ specialClass }) => (
       <Link to="/page-2">Page Two</Link>
     </li>
     <li>
-      <Link to="/">Page</Link>
+      <Link to="/">Example</Link>
     </li>
     <li>
-      <Link to="/">Page</Link>
+      <Link to="/">Example</Link>
     </li>
     <li>
-      <Link to="/">Page</Link>
+      <Link to="/">Example</Link>
     </li>
   </ul>
 )

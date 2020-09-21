@@ -43,7 +43,7 @@ const Layout = ({ children }) => (
         fontSize:"1.4rem",
       }}
       style={{
-        background: "#e98976",
+        background: "$color-orange",
         textShadow: "none",
         color: "#1f1d1e",
         fontSize:"1.5rem",

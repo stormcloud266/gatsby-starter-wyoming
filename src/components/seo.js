@@ -1,30 +1,52 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({
-  title = `My Starter`,
-  description = `This is a description`,
-  url = `site.com`,
-  imageUrl = `image.com`,
-  article,
-}) => (
-  <Helmet>
-    <title>{title}</title>
-    <meta name="description" content={description} />
+  title,
+  description,
+  url,
+  imageUrl
+}) => {
 
-    {/***********  twitter cards ***********/}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={imageUrl} />
+  const data = useStaticQuery(graphql`
+    query SiteData {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+        }
+      }
+    }
+  `)
 
-    {/***********  open graph ***********/}
-    <meta property="og:url" content={url} />
-    <meta property="og:type" content={article ? "article" : "website"} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={imageUrl} />
-  </Helmet>
-)
+  const info = {
+    title: title || data.site.siteMetadata.title,
+    description: description || data.site.siteMetadata.description,
+    url: url || data.site.siteMetadata.siteUrl,
+    imageUrl: imageUrl || 'https://link.to/image.png'
+  }
+
+  return (
+    <Helmet>
+      <title>{info.title}</title>
+      <meta name="description" content={info.description} />
+
+      {/***********  twitter cards ***********/}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={info.title} />
+      <meta name="twitter:description" content={info.description} />
+      <meta name="twitter:image" content={info.imageUrl} />
+
+      {/***********  open graph ***********/}
+      <meta property="og:url" content={info.url} />
+      <meta property="og:type" content={"website"} />
+      <meta property="og:title" content={info.title} />
+      <meta property="og:description" content={info.description} />
+      <meta property="og:image" content={info.imageUrl} />
+    </Helmet>
+  )
+}
 
 export default SEO

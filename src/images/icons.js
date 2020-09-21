@@ -1,3 +1,5 @@
+// icons are from https://teenyicons.com/
+
 import React from "react"
 
 export const Hamburger = () => (
