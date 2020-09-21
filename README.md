@@ -37,24 +37,48 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 * [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent)
 * [gatsby-plugin-alias-imports](https://www.gatsbyjs.com/plugins/gatsby-plugin-alias-imports/)
 
-## Customization
 
-## Form
+
+
+## Quick Start
+
+### Install using the command line
+:warning: You will need [Node](https://nodejs.org/en/) and [Gatsby](https://www.gatsbyjs.com/docs/quick-start/) installed.
+
+1. **Create a Wyoming Gatsby project.**
+
+   ```sh
+   gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming
+   ```
+
+2. **Move Into Your New Project's Directory**
+
+  ```sh
+  gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming
+  ```
+
+2. **Start Developing**
+
+  ```sh
+  gatsby develop
+  ```
+
+### Or, quickly deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stormcloud266/gatsby-starter-wyoming)
+
+## Customizations
+
+### Styles
+The `src/styles/absctracts/_variable.scss` contains variables to make sitewide color and font family change. 
+
+### Form
+Form name defaults to "contact" but can be changed through the name prop. This allows you to use the same component for multiple forms while differentiating them in Netlify Forms
 
 ## License
 
 
-## Installation
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stormcloud266/gatsby-starter-wyoming)
-
-`gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming`
-
-`cd wyoming-project`
-
-`gatsby develop`
-
-
 ## Support
 
+If you enjoyed using this starter and would like to 
 <a href="https://www.buymeacoffee.com/tawnee" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="41" width="174"></a>

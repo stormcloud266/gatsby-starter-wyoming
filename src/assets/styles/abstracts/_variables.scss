@@ -1,11 +1,11 @@
-$color-primary: #e98976;
+$color-primary: #e98976; // changes main accent color
 
-$color-text: #c1bcbe;
-$color-text-lighter: #f1e9ed;
+$color-text: #c1bcbe; // changes color of body text (paragraphs, links, etc.)
+$color-text-lighter: #f1e9ed; // changes color of header text (h1, h2, h3)
 
-$color-bg: #272526;
-$color-bg-darker: #222021;
-$color-bg-darkest: #1f1d1e;
+$color-bg: #272526; // changes body background color
+$color-bg-darker: #222021; // changes darker accent background color
+$color-bg-darkest: #1f1d1e; // changed header and footer background color
 
-$font-family-body: 'Kumbh Sans', sans-serif;
-$font-family-header: 'Sacramento', cursive;
+$font-family-body: 'Kumbh Sans', sans-serif; // changes font family for body text (paragraphs, links, etc.)
+$font-family-header: 'Sacramento', cursive; // changes font family for h1 and h2
