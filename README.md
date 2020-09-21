@@ -54,7 +54,7 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 
 `gatsby develop`
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="tawnee" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000" data-font-color="#000" data-coffee-color="#fff" ></script>
 
+## Support
 
 ![https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png](https://www.buymeacoffee.com/tawnee)
