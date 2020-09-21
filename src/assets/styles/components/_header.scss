@@ -25,7 +25,8 @@
       color: $color-text;
       transition: color .2s;
       
-      &:hover {
+      &:hover,
+      &:focus {
         color: $color-primary;
       }
     }

@@ -20,16 +20,15 @@
 
   input,
   textarea {
-    background-color: #554e51;
     background-color: lighten($color-bg, 10%);
     border: none;
     border-bottom: 2px solid transparent;
     border-radius: 2px;
-    color: inherit;
+    color: $color-text-lighter;
     font-family: inherit;
     font-size: inherit;
     order: 2;
-    padding: 1.4rem;
+    padding: 1.4rem 1.4rem 1.2rem;
     width: 100%;
     transition: all .2s;
 
