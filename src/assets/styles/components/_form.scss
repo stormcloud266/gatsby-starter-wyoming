@@ -23,6 +23,7 @@
     background-color: #554e51;
     background-color: lighten($color-bg, 10%);
     border: none;
+    border-bottom: 2px solid transparent;
     border-radius: 2px;
     color: inherit;
     font-family: inherit;
@@ -30,6 +31,13 @@
     order: 2;
     padding: 1.4rem;
     width: 100%;
+    transition: all .2s;
+
+    &:focus {
+      border-color: $color-primary;
+      outline: none;
+    }
+
   }
 
   textarea {

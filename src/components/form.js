@@ -1,11 +1,11 @@
 import React from "react"
 
-const Form = () => (
+const Form = ({ name = "contact"}) => (
 
-  <form name="contact" className="form" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
+  <form name={name} className="form" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
 
     <input type="hidden" name="bot-field" />
-    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="form-name" value={name} />
 
     <div className="form__section">
       <input type="text" id="name" name="name"/>
@@ -13,12 +13,12 @@ const Form = () => (
     </div>
 
     <div className="form__section">
-      <input type="email" id="email" name="email"/>
+      <input type="email" id="email" name="email" required/>
       <label htmlFor="email">Email</label>
     </div>
 
     <div className="form__section">
-      <textarea name="comment" id="comment" />
+      <textarea name="comment" id="comment" required/>
       <label htmlFor="comment">Comment</label>
     </div>
 
