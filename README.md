@@ -13,6 +13,7 @@ This starter was built specifically to get **small business websites** up and ru
 * SEO component with open graph and Twitter cards
 * GDPR compliant Google Analytics and Facebook Pixel with cookie consent banner
 * Svg icon file
+* Netlify form
 
 **Additional Plugins**
 * [gatsby-plugin-sass](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
