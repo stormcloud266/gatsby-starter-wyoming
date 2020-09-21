@@ -24,9 +24,10 @@
   &__nav-list {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 
     li { 
-      margin-left: 4rem;
+      margin-left: 3rem;
     }
   }
 
@@ -44,7 +45,6 @@
     }
 
     &__nav-list {
-      flex-wrap: wrap;
       justify-content: center;
 
       li { 
