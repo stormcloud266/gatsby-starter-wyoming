@@ -45,7 +45,21 @@ const SEO = ({
       <meta property="og:title" content={info.title} />
       <meta property="og:description" content={info.description} />
       <meta property="og:image" content={info.imageUrl} />
+
+      {/***********  schema ***********/}
+      <script type="application/ld+json">{`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "${data.site.siteMetadata.title}",
+        "url": "${data.site.siteMetadata.siteUrl}",
+      }
+      `}</script>
+
     </Helmet>
+
+
+
   )
 }
 

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-wyoming",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Tawnee",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Tawnee Allport",
   "dependencies": {
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.63",
@@ -38,6 +38,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev-m": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/**/*.{js,jsx,ts,tsx,json,md,scss}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

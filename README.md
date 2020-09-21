@@ -1,21 +1,28 @@
 # gatsby-starter-wyoming
 
-This is a Gatsby.js V2 starter template with additional plugins and components I use on most of my projects. 
-
+This is a Gatsby.js V2 starter template with additional plugins and components 
 This starter was built specifically to get **small business websites** up and running fast with Gatsby. 
 
 Preview
 link
 
+![](https://github.com/stormcloud266/gatsby-starter-wyoming/blob/master/screenshot.gif)
+
 ## Overview
 
 **Features**
-* SCSS integration, folder structure, file imports, and minimal styling
+* SCSS integration, folder structure, and file imports
+* Full responsive design
 * Responsive header component with desktop and mobile nav
-* Minimal footer component
-* SEO component with open graph and Twitter cards
+* SEO component with open graph, Twitter cards, and JSON LD schema
 * GDPR compliant Google Analytics and Facebook Pixel with cookie consent banner
 * Netlify form with custom success page
+* Mobile development command
+* Robots.txt and sitemap.xml on build
+* Offline support
+* Lazy loaded images and background images
+
+Is based on [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-default) and comes with all the default plugins.
 
 **Additional Plugins**
 * [gatsby-plugin-sass](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
@@ -27,9 +34,12 @@ link
 * [gatsby-plugin-robots-txt](https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/)
 * [gatsby-plugin-gdpr-cookies](https://www.gatsbyjs.com/plugins/gatsby-plugin-gdpr-cookies/)
 * [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent)
+* [gatsby-plugin-alias-imports](https://www.gatsbyjs.com/plugins/gatsby-plugin-alias-imports/)
 
 
 ## Installation
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stormcloud266/gatsby-starter-wyoming)
 
 `gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming`
 

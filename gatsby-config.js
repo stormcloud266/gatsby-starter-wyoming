@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Starter`,
-    description: `Gatsby default plus SCSS, web fonts, analytics`,
-    author: `Tawnee Allort`,
-    siteUrl: 'https://www.test.com' // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
+    title: `Gatsby Starter Wyoming`,
+    description: `Gatsby starter with SCSS, web fonts, analytics. Built with small businesses in mind.`,
+    author: `Tawnee Allport`,
+    siteUrl: 'https://gatsby-starter-wyoming.netlify.app/' // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -83,6 +83,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

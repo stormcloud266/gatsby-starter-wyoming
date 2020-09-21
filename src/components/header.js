@@ -17,12 +17,13 @@ const Header = () => {
         <button 
           id="nav-toggle"
           onClick={() => toggleNav(!isOpen)}
+          aria-label="Toggle menu"
         >
-          <span className={!isOpen ? 'show' : ''}>
+          <span className={!isOpen ? 'show' : ''} aria-hidden="true">
             <Hamburger />
           </span>
 
-          <span className={isOpen ? 'show' : ''}>
+          <span className={isOpen ? 'show' : ''} aria-hidden="true">
             <Times />
           </span>
         </button>
