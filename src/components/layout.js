@@ -5,7 +5,7 @@ import CookieConsent from 'react-cookie-consent'
 import Header from "./header"
 import Footer from "./footer"
 
-import "../styles/styles.scss"
+import "../assets/styles/styles.scss"
 
 const Layout = ({ children }) => (
   <>

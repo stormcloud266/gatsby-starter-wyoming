@@ -7,12 +7,14 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/hero';
-@import 'components/footer';
-@import 'components/header';
-
 @import 'layout/section';
 @import 'layout/wrapper';
 
+@import 'components/button';
+@import 'components/hero';
+@import 'components/contact';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/header';
+
 @import 'pages/home';
-@import 'pages/page2';

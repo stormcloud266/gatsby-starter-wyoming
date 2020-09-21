@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import NavLinks from './navLinks'
-import { Hamburger, Times } from '../images/icons'
+import { Hamburger, Times } from '../assets/icons'
 
 const Header = () => {
   const [isOpen, toggleNav] = useState(false)

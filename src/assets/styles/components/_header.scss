@@ -45,7 +45,7 @@
     #nav-toggle {
 
       // overwrite default button styles
-      color: white;
+      color: #f1e9ed;
       border: none;
       padding: 1rem;
       line-height: 1;
@@ -111,7 +111,10 @@
         transform: translateY(1rem);
       }
 
-      a { padding: .8rem 1.4rem; }
+      a { 
+        padding: .8rem 1.4rem;
+        color: #f1e9ed;
+      }
     }
 
 

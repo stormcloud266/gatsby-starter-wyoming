@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  & > * {
+    flex: 1;
+  }
+
+  &__text {
+    padding-right: 3.6rem;
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+
+  &__icon-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2.4rem;
+
+    .icon {
+      margin-right: 2rem;
+    }
+  }
+
+  @include whenMedium {
+    flex-direction: column;
+    max-width: 56rem;
+
+    &__info {
+      margin-bottom: 4rem;
+    }
+  }
+}

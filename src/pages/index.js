@@ -2,9 +2,10 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 import Img from "gatsby-image"
-import { Pin, Alarm, Dollar } from '../images/icons'
+import { Pin, Alarm, Battery } from '../assets/icons'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Contact from '../components/contact'
 
 const IndexPage = ({ data, location }) => (
   <Layout>
@@ -30,7 +31,7 @@ const IndexPage = ({ data, location }) => (
     <section className="section wrapper wrapper--sm intro" id="about">
       <h2>Welcome to the Wyoming Gatsby Starter</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, voluptate fuga. Nostrum illo quidem facilis, perferendis nemo provident omnis aliquid in! Quasi hic in repellendus praesentium unde reprehenderit eligendi cupiditate!</p>
-      <Link to="/page-2">Page Two</Link>
+      <Link to="/#contact">Start Your Adventure</Link>
     </section>
 
     <div className="section bg-darker" id="west">
@@ -40,6 +41,7 @@ const IndexPage = ({ data, location }) => (
         <div className="text-image__text">
           <h2>The Wild West</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, voluptate fuga. Nostrum illo quidem facilis, perferendis nemo provident omnis aliquid in! Quasi hic in repellendus praesentium unde reprehenderit eligendi cupiditate!</p>
+          <Link to="/#contact" className="btn">Book Now</Link>
         </div>
       </section>
     </div>
@@ -65,7 +67,7 @@ const IndexPage = ({ data, location }) => (
         <div className="cards__container">
 
           <div className="card">
-            <div className="card__icon">
+            <div className="icon">
               <Alarm />
             </div>
 
@@ -74,26 +76,29 @@ const IndexPage = ({ data, location }) => (
           </div>
 
           <div className="card">
-            <div className="card__icon">
+            <div className="icon">
               <Pin />
             </div>
 
-            <h3>Wide Open Spaces</h3>
+            <h3>Explore Wide Open Spaces</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita odit aut, adipisci ipsam similique?</p>
           </div>
 
           <div className="card">
-            <div className="card__icon">
-              <Dollar />
+            <div className="icon">
+              <Battery />
             </div>
 
-            <h3>It's Pretty Cheap</h3>
+            <h3>Recharge Your Spiritual Batteries</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita odit aut, adipisci ipsam similique?</p>
           </div>
 
         </div>
       </section>
     </div>
+
+    <Contact />
+
 
   </Layout>
 )

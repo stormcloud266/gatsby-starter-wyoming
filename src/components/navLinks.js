@@ -16,7 +16,7 @@ const NavLinks = ({ specialClass }) => (
       <Link to="/#adventure">Adventure</Link>
     </li>
     <li>
-      <Link to="/">Example</Link>
+      <Link to="/#contact">Contact</Link>
     </li>
   </ul>
 )
