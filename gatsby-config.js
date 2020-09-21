@@ -1,6 +1,4 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+const path = require('path');
 
 module.exports = {
   siteMetadata: {
@@ -69,6 +67,18 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@components': path.resolve(__dirname, 'src/components'),
+          '@sections': path.resolve(__dirname, 'src/components/sections'),
+          '@assets': path.resolve(__dirname, 'src/assets/'),
+          '@images': path.resolve(__dirname, 'src/assets/images'),
+          '@styles': path.resolve(__dirname, 'src/assets/styles/'),
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

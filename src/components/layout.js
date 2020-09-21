@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Header from "./header"
-import Footer from "./footer"
-// import CookieBanner from "./cookieBanner"
+import Header from "@components/header"
+import Footer from "@components/footer"
+// import CookieBanner from "@components/cookieBanner"
 
-import "../assets/styles/styles.scss"
+import "@styles/styles.scss"
 
 const Layout = ({ children }) => (
   <>

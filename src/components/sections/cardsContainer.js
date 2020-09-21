@@ -1,6 +1,6 @@
 import React from "react"
-import Card from './card'
-import { Pin, Alarm, Battery } from '../assets/icons'
+import Card from '@components/card'
+import { Pin, Alarm, Battery } from '@assets/icons'
 
 const CardsContainer = () => {
 

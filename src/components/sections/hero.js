@@ -6,12 +6,12 @@ const Hero = () => {
   const { file } = useStaticQuery(graphql`
     query HeroQuery {
       file(relativePath: { eq: "dan-meyers-wyoming.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+        childImageSharp {
+          fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
-    }
     }
   `)
   return (

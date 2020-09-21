@@ -1,6 +1,7 @@
 import React from "react"
-import Form from "./form"
-import { Email, Pin, Phone } from "../assets/icons"
+import Form from "@components/form"
+import { Email, Pin, Phone } from "@assets/icons"
+
 const Contact = () => (
   <section className="wrapper section contact" id="contact">
 

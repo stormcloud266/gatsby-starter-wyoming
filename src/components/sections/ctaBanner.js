@@ -6,12 +6,12 @@ const CTA = () => {
   const { file } = useStaticQuery(graphql`
     query CTABannerQuery {
       file(relativePath: { eq: "trevor-vannoy-wyoming.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+        childImageSharp {
+          fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
-    }
     }
   `)
   return (

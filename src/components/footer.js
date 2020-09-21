@@ -1,5 +1,5 @@
 import React from "react"
-import NavLinks from './navLinks'
+import NavLinks from '@components/navLinks'
 
 const Footer = () => (
   <footer className="bg-dark footer">
