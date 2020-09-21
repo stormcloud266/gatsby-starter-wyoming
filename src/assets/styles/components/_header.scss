@@ -17,23 +17,27 @@
   &__nav-list {
     display: flex;
 
-    li { margin-left: 3.6rem }
+    li { 
+      margin-left: 3.6rem;
+    }
 
     a { 
       color: #c1bcbe;
       transition: color .2s;
       
-      &:hover { color: $color-orange; }
+      &:hover {
+        color: $color-orange;
+      }
     }
   }
 
   &__logo {
+    color: $color-orange;
+    font-family: 'Sacramento', serif;
+    font-size: 3.2rem;
     padding: 1.2rem 0;
     position: relative;
     z-index: 1000;
-    font-size: 3.2rem;
-    font-family: 'Sacramento', serif;
-    color: $color-orange;
   }
 
   #nav-toggle {
@@ -45,11 +49,11 @@
     #nav-toggle {
 
       // overwrite default button styles
-      color: #f1e9ed;
-      border: none;
-      padding: 1rem;
-      line-height: 1;
       background-color: transparent;
+      border: none;
+      color: #f1e9ed;
+      line-height: 1;
+      padding: 1rem;
       
       // positioning
       display: block;

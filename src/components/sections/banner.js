@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
-const CTA = () => {
+const Banner = () => {
   const { file } = useStaticQuery(graphql`
     query CTABannerQuery {
       file(relativePath: { eq: "trevor-vannoy-wyoming.jpg" }) {
@@ -25,10 +25,10 @@ const CTA = () => {
       ]}
     >
       <div className="wrapper wrapper--sm">
-        <h2>Your Next Adventure Starts Here</h2>
+        <h2 className="banner__title">Your Next Adventure Starts Here</h2>
       </div>
     </BackgroundImage>
   )
 }
 
-export default CTA
+export default Banner

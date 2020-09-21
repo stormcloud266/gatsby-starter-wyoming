@@ -25,7 +25,7 @@ const CardsContainer = () => {
   return (
     <div className="section bg-darker">
       <section className="wrapper cards">
-        <h2>A Little Bit of Everything</h2>
+        <h2 className="cards__title">A Little Bit of Everything</h2>
         <div className="cards__container">
 
           {

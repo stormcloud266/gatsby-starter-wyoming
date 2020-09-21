@@ -1,43 +1,55 @@
 .footer {
-  padding: 8rem 0;
   background-color: #1f1d1e;
+  padding: 8rem 0;
 
-  .logo {
-    font-size: 3.6rem;
-    font-family: 'Sacramento', serif;
+  &__logo {
     color: $color-orange;
+    font-family: 'Sacramento', serif;
+    font-size: 3.6rem;
     margin-bottom: 1rem;
   }
 
   &__text {
     display: flex;
     
-    p { max-width: 40rem; }
+    p { 
+      max-width: 40rem;
+    }
   }
 
-  &__nav { flex: 1; }
+  &__nav { 
+    flex: 1; 
+  }
 
   &__nav-list {
     display: flex;
     justify-content: flex-end;
 
-    li { margin-left: 4rem; }
+    li { 
+      margin-left: 4rem;
+    }
   }
 
   @include whenMedium {
-    &__inner { text-align: center; }
+    &__inner { 
+      text-align: center;
+    }
 
     &__text {
       flex-direction: column;
 
-      p { margin: 0 auto; }
+      p { 
+        margin: 0 auto;
+      }
     }
 
     &__nav-list {
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
 
-      li { margin: 2rem 2rem 0 2rem; }
+      li { 
+        margin: 2rem 2rem 0 2rem;
+      }
     }
     
   } // end of whenMedium

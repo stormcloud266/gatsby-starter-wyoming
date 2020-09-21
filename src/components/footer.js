@@ -5,7 +5,7 @@ const Footer = () => (
   <footer className="bg-dark footer">
     <div className="wrapper footer__inner">
       
-     <p className="logo">Logo</p>
+     <p className="footer__logo">Logo</p>
 
       <div className="footer__text">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In obcaecati vitae consectetur.</p>

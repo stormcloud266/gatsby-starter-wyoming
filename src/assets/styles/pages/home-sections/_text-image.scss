@@ -1,0 +1,36 @@
+.text-image {
+  display: flex;
+  align-items: center;
+
+  & > * {
+    flex: 1;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    padding-left: 3.6rem;
+  }
+
+  &__body {
+    margin-bottom: 2rem;
+  }
+
+  .gatsby-image-wrapper {
+    border-radius: 2px;
+    box-shadow: 0 4px 14px rgba(#000, .2);
+    width: 100%;
+  }
+
+  @include whenMedium {
+    flex-direction: column;
+
+    &__text {
+      padding-left: 0;
+      margin-top: 5rem;
+      text-align: center;
+    }
+  }
+}

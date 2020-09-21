@@ -1,20 +1,20 @@
 button, 
 .btn {
   background-color: $color-orange;
-  color: $color-bg;
-  font-family: inherit;
   border: none;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 1.4rem 2rem;
+  color: $color-bg;
   cursor: pointer;
-  transition: background-color .2s;
-  line-height: 1;
+  display: inline-block;
+  font-family: inherit;
   font-size: 1.4rem;
+  line-height: 1;
+  padding: 1.4rem 2rem;
+  text-transform: uppercase;
+  transition: background-color .2s;
 
   &:hover,
   &:focus {
-    background-color: lighten($color-orange, 5%);
     color: $color-bg;
+    background-color: lighten($color-orange, 5%);
   }
 }

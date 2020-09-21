@@ -6,8 +6,8 @@ const Card = ({ icon, title, body }) => (
       {icon}
     </div>
 
-    <h3>{title}</h3>
-    <p>{body}</p>
+    <h3 className="card__title">{title}</h3>
+    <p className="card__body">{body}</p>
   </div>
 )
 

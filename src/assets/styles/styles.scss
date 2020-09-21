@@ -11,11 +11,17 @@
 @import 'layout/wrapper';
 
 @import 'components/button';
-@import 'components/hero';
-@import 'components/contact';
 @import 'components/footer';
 @import 'components/form';
 @import 'components/header';
+@import 'components/card';
+@import 'components/icon';
 
-@import 'pages/home';
+@import 'pages/home-sections/hero';
+@import 'pages/home-sections/intro';
+@import 'pages/home-sections/text-image';
+@import 'pages/home-sections/banner';
+@import 'pages/home-sections/cards-container';
+@import 'pages/home-sections/contact';
+
 @import 'pages/success-and-error';

@@ -1,20 +1,21 @@
 .contact {
   display: flex;
+
   & > * {
     flex: 1;
   }
 
   &__text {
     padding-right: 3.6rem;
+
     h2 {
       margin-bottom: 1rem;
     }
   }
 
-
   &__icon-group {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-top: 2.4rem;
 
     .icon {
@@ -29,5 +30,5 @@
     &__info {
       margin-bottom: 4rem;
     }
-  }
+  } // end of whenMedium
 }

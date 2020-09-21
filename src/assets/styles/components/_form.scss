@@ -12,23 +12,23 @@
 
   label {
     font-size: 1.4rem;
-    text-transform: uppercase;
     margin-bottom: .5rem;
     order: 1;
+    text-transform: uppercase;
     transition: color .2s;
   }
 
   input,
   textarea {
     background-color: #554e51;
-    width: 100%;
     border: none;
+    border-radius: 2px;
+    color: inherit;
     font-family: inherit;
     font-size: inherit;
-    color: inherit;
-    padding: 1.4rem;
-    border-radius: 2px;
     order: 2;
+    padding: 1.4rem;
+    width: 100%;
   }
 
   textarea {

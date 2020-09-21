@@ -6,7 +6,7 @@ import SEO from "@components/seo"
 import Hero from "@sections/hero"
 import Intro from "@sections/intro"
 import TextImage from "@sections/textImage"
-import CTA from "@sections/ctaBanner"
+import Banner from "@sections/banner"
 import CardsContainer from "@sections/cardsContainer"
 import Contact from '@sections/contact'
 
@@ -28,7 +28,7 @@ const IndexPage = ({ location }) => {
 
     <TextImage />
 
-    <CTA />
+    <Banner />
 
     <CardsContainer />
 

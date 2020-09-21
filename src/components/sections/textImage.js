@@ -20,8 +20,8 @@ const TextImage = () => {
         <Img fluid={file.childImageSharp.fluid} />
 
         <div className="text-image__text">
-          <h2>The Wild West</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, voluptate fuga. Nostrum illo quidem facilis, perferendis nemo provident omnis aliquid in! Quasi hic in repellendus praesentium unde reprehenderit eligendi cupiditate!</p>
+          <h2 className="text-image__title">The Wild West</h2>
+          <p className="text-image__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, voluptate fuga. Nostrum illo quidem facilis, perferendis nemo provident omnis aliquid in! Quasi hic in repellendus praesentium unde reprehenderit eligendi cupiditate!</p>
           <Link to="/#contact" className="btn">Book Now</Link>
         </div>
       </section>
