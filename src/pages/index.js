@@ -1,13 +1,16 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import BackgroundImage from 'gatsby-background-image'
-import Img from "gatsby-image"
-import { Pin, Alarm, Battery } from '../assets/icons'
 import Layout from "../components/layout"
+import CardsContainer from "../components/cardsContainer"
+import CTA from "../components/ctaBanner"
+import Hero from "../components/hero"
 import SEO from "../components/seo"
+import Intro from "../components/intro"
+import TextImage from "../components/textImage"
 import Contact from '../components/contact'
 
-const IndexPage = ({ data, location }) => (
+const IndexPage = ({ data, location }) => {
+  
+  return (
   <Layout>
 
     <SEO 
@@ -17,116 +20,21 @@ const IndexPage = ({ data, location }) => (
       imageUrl={'https://url.to/image.png'}
     />
 
-    <BackgroundImage
-      Tag="section"
-      className="hero"
-      fluid={[
-        `linear-gradient(rgba(27,25,26, 0.7), rgba(27,25,26, 0.7))`,
-        data.heroImage.childImageSharp.fluid
-      ]}
-    >
-      <h1>Wyoming</h1>
-    </BackgroundImage>
+    <Hero />
 
-    <section className="section wrapper wrapper--sm intro" id="about">
-      <h2>Welcome to the Wyoming Gatsby Starter</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, voluptate fuga. Nostrum illo quidem facilis, perferendis nemo provident omnis aliquid in! Quasi hic in repellendus praesentium unde reprehenderit eligendi cupiditate!</p>
-      <Link to="/#contact">Start Your Adventure</Link>
-    </section>
+    <Intro />
 
-    <div className="section bg-darker" id="west">
-      <section className="wrapper wrapper--sm-on-md text-image">
-        <Img fluid={data.image.childImageSharp.fluid} />
+    <TextImage />
 
-        <div className="text-image__text">
-          <h2>The Wild West</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, voluptate fuga. Nostrum illo quidem facilis, perferendis nemo provident omnis aliquid in! Quasi hic in repellendus praesentium unde reprehenderit eligendi cupiditate!</p>
-          <Link to="/#contact" className="btn">Book Now</Link>
-        </div>
-      </section>
-    </div>
+    <CTA />
 
-    <BackgroundImage
-      Tag="section"
-      className="banner"
-      id="adventure"
-      fluid={[
-        `linear-gradient(rgba(27,25,26, 0.7), rgba(27,25,26, 0.7))`,
-        data.bannerImage.childImageSharp.fluid
-      ]}
-    >
-      <div className="wrapper wrapper--sm">
-        <h2>Your Next Adventure Starts Here</h2>
-      </div>
-    </BackgroundImage>
-
-
-    <div className="section bg-darker">
-      <section className="wrapper cards">
-        <h2>A Little Bit of Everything</h2>
-        <div className="cards__container">
-
-          <div className="card">
-            <div className="icon">
-              <Alarm />
-            </div>
-
-            <h3>Wake Up with the Sun</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita odit aut, adipisci ipsam similique?</p>
-          </div>
-
-          <div className="card">
-            <div className="icon">
-              <Pin />
-            </div>
-
-            <h3>Explore Wide Open Spaces</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita odit aut, adipisci ipsam similique?</p>
-          </div>
-
-          <div className="card">
-            <div className="icon">
-              <Battery />
-            </div>
-
-            <h3>Recharge Your Spiritual Batteries</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita odit aut, adipisci ipsam similique?</p>
-          </div>
-
-        </div>
-      </section>
-    </div>
+    <CardsContainer />
 
     <Contact />
 
 
   </Layout>
 )
+}
 
 export default IndexPage
-
-export const query = graphql`
-  query {
-    heroImage: file(relativePath: { eq: "dan-meyers-wyoming.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image: file(relativePath: { eq: "sean-musil-wyoming.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 700, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    bannerImage: file(relativePath: { eq: "trevor-vannoy-wyoming.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`

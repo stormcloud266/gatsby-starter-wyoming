@@ -12,8 +12,7 @@ This starter was built specifically to get **small business websites** up and ru
 * Minimal footer component
 * SEO component with open graph and Twitter cards
 * GDPR compliant Google Analytics and Facebook Pixel with cookie consent banner
-* Svg icon file
-* Netlify form
+* Netlify form with custom success page
 
 **Additional Plugins**
 * [gatsby-plugin-sass](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
@@ -30,8 +29,8 @@ This starter was built specifically to get **small business websites** up and ru
 
 ### Install and Develop
 
-`gatsby new wyoming https://github.com/stormcloud266/gatsby-starter-wyoming`
+`gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming`
 
-`cd wyoming`
+`cd wyoming-project`
 
 `gatsby develop`
