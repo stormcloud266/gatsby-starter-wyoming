@@ -1,0 +1,15 @@
+.page-2 {
+  margin-top: 9rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &.wrapper {
+    max-width: 600px;
+  }
+}

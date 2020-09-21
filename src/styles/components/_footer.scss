@@ -1,0 +1,43 @@
+.footer {
+  padding: 8rem 0;
+  font-size: $font-0;
+  background-color: #1f1d1e;
+
+  .logo {
+    font-size: 3.6rem;
+    font-family: 'Sacramento', serif;
+    color: #e98976;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    display: flex;
+    
+    p { max-width: 40rem; }
+  }
+
+  &__nav { flex: 1; }
+
+  &__nav-list {
+    display: flex;
+    justify-content: flex-end;
+
+    li { margin-left: $p-8; }
+  }
+
+  @include whenMedium {
+    &__inner { text-align: center; }
+
+    &__text {
+      flex-direction: column;
+
+      p { margin: 0 auto; }
+    }
+
+    &__nav-list {
+      justify-content: center;
+      li { margin: $p-4 $p-4 0 $p-4; }
+    }
+    
+  } // end of whenMedium
+}

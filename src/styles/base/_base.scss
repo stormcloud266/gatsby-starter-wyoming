@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #dbd9da;
+  background-color: $color-bg-0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Kumbh', sans-serif;
+  font-size: 1.6rem;
+  background-color: #272526;
+}
+
+h1,
+h2 {
+  color: white;
+  font-family: 'Sacramento';
+}
+
+h1 { font-size: 7.6rem; }
+
+h2 { font-size: 3.6rem; }
+
+li { list-style: none; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a { 
+  text-decoration: none;
+  color: #e98976;
+  transition: color .3s;
+
+  &:hover {
+    color: lighten(#e98976, 15%);
+  }
+}

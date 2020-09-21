@@ -1,0 +1,126 @@
+.header {
+  background-color: #1f1d1e;
+
+  // positioning
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+
+  &__nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+
+    li { margin-left: 3.6rem }
+
+    a { 
+      color: #dbd9da;
+      transition: color .2s;
+      
+      &:hover { color: #e98976; }
+    }
+  }
+
+  &__logo {
+    padding: 1.4rem 0;
+    position: relative;
+    z-index: 1000;
+    font-size: 3.8rem;
+    font-family: 'Sacramento', serif;
+    color: #e98976;
+
+    svg {
+      fill: white;
+      width: 100%;
+      max-width: 14rem;
+      display: block;
+    }
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+
+  @include whenMedium {
+
+    #nav-toggle {
+
+      // overwrite default button styles
+      color: white;
+      border: none;
+      padding: $p-1;
+      line-height: 1;
+      background-color: transparent;
+      
+      // positioning
+      display: block;
+      position: relative;
+      z-index: 1000;
+
+      // changes icon on menu toggle
+      span { display: none; }
+      .show { display: block; }
+    }
+
+    &__nav {
+      background-color: #1f1d1e;
+
+      // positioning
+      position: absolute;
+      top:0; left:0; right: 0;
+      min-height: 100vh;
+
+      // flex
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // transition set up
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .2s;
+
+      &.open {
+        opacity: 1;
+        visibility: visible;
+
+        li {
+          transform: translateY(0);
+          opacity: 1;
+          transition: opacity .2s, transform .2s;
+
+          // creates staggered delay effect
+          &:nth-child(1) { transition-delay: .1s;}
+          &:nth-child(2) { transition-delay: .15s;}
+          &:nth-child(3) { transition-delay: .2s;}
+          &:nth-child(4) { transition-delay: .25s;}
+          &:nth-child(5) { transition-delay: .3s;}
+        }
+      }
+
+    }
+
+    &__nav-list {
+      flex-direction: column;
+      align-items: center;
+      font-size: $font-3;
+
+      li {
+        margin-left: 0;
+        margin-bottom: $p-6;
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+
+      a { padding: $p-1 $p-3; }
+    }
+
+
+  } // end of whenMedium
+}
