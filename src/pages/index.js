@@ -19,7 +19,6 @@ const IndexPage = ({ location }) => {
       title="Home"
       description="My example description"
       url={location.href}
-      imageUrl={'https://url.to/image.png'}
     />
 
     <Hero />
