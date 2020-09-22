@@ -18,6 +18,9 @@ const SEO = ({
           siteUrl
         }
       }
+      file(name: {eq: "banner"}) {
+        publicURL
+      }
     }
   `)
 
@@ -25,7 +28,7 @@ const SEO = ({
     title: title || data.site.siteMetadata.title,
     description: description || data.site.siteMetadata.description,
     url: url || data.site.siteMetadata.siteUrl,
-    imageUrl: imageUrl || 'https://link.to/image.png'
+    imageUrl: imageUrl || data.site.siteMetadata.siteUrl + data.file.publicURL
   }
 
   return (

@@ -2,7 +2,7 @@
   "name": "gatsby-starter-wyoming",
   "private": true,
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0",
   "author": "Tawnee Allport",
   "dependencies": {
     "dotenv": "^8.2.0",

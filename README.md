@@ -54,7 +54,7 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 2. **Move Into Your New Project's Directory**
 
     ```sh
-    gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming
+    cd wyoming-project
     ```
 
 2. **Start Developing**
@@ -70,7 +70,9 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 ## Customizations
 
 ### Styles
-The `src/styles/absctracts/_variable.scss` contains variables to make sitewide color and font family change. 
+All styles are in the `src/assets/styles` directory.
+
+The `src/assets/styles/absctracts/_variable.scss` contains variables to make sitewide color and font family change. 
 
 ### Form
 Form name defaults to "contact" but can be changed through the name prop. This allows you to use the same component for multiple forms while differentiating them in Netlify Forms
