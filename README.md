@@ -72,7 +72,7 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 ### Styles
 All styles are in the `src/assets/styles` directory.
 
-The `src/assets/styles/absctracts/_variable.scss` contains variables to make sitewide color and font family change. 
+The `src/assets/styles/abstracts/_variable.scss` contains variables to make sitewide color and font family change.
 
 ### Form
 Form name defaults to "contact" but can be changed through the name prop. This allows you to use the same component for multiple forms while differentiating them in Netlify Forms

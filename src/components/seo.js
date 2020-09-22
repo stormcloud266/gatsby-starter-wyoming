@@ -41,6 +41,8 @@ const SEO = ({
       <meta name="twitter:title" content={info.title} />
       <meta name="twitter:description" content={info.description} />
       <meta name="twitter:image" content={info.imageUrl} />
+      <meta name="twitter:creator" content="@TA_Coding" />
+
 
       {/***********  open graph ***********/}
       <meta property="og:url" content={info.url} />
