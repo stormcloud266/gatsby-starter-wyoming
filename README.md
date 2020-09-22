@@ -76,14 +76,24 @@ Form name defaults to "contact" but can be changed through the name prop. This a
 ### SEO
 The SEO component is located in `src/components/seo.js`. 
 
-The default info can be customized in "siteMetadata" in the `gatsby-config.js` file. The large summary image is located in the `static` folder, and is pulled in with a static query. 
+The default info can be customized in "siteMetadata" in the `gatsby-config.js` file.
 
-All of the fields can be edit on a page-by-page basis with props.
+```javascript
+siteMetadata: {
+    title: `Your Wesbite's Name`,
+    description: `Your description`,
+    author: `Your Name`,
+    creator: `@UR_Twitter`, // Your Twitter handle
+    siteUrl: `https:/yourwebsite.com/`
+}
+```
+
+The large summary image is located in the `static` folder, and is pulled in with a static query. All of the fields can be edit on a page-by-page basis with props.
 
 ```javascript
 <SEO 
-  title="Home"
-  description="My example description"
+  title="New Title Here"
+  description="New example description."
 />
 ```
 ### Analytics
@@ -99,7 +109,7 @@ All of the fields can be edit on a page-by-page basis with props.
       },
       ```
 
-2. **Add cookingName to cookieBanner.js**
+2. **Add cookieName to cookieBanner.js**
 
     In `src/components/cookieBanner.js` the CookieConsent component has a prop named "cookieName." The value of this prop should match the cookieName in your gatsby-config.
 
