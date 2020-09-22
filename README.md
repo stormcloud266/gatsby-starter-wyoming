@@ -86,6 +86,51 @@ All of the fields can be edit on a page-by-page basis with props.
   description="My example description"
 />
 ```
+### Analytics
+:warning: To start using analytics, you will need your Google Analytics tracking ID and/or Facebook Pixel ID.
+
+1. **Add tracking ID to gatsby-config.js file**
+
+      ```json
+      googleAnalytics: {
+        trackingId: 'UA-thisisatest', // leave empty if you want to disable the tracker
+        cookieName: 'gatsby-gdpr-google-analytics', // default
+        anonymize: true // default
+      },
+      ```
+
+2. **Add cookingName to cookieBanner.js**
+In `src/components/cookieBanner.js` the CookieConsent component has a prop named "cookieName." The value of this prop should match the cookieName in your gatsby-config.
+
+      ```javascript
+      cookieName="gatsby-gdpr-google-analytics"
+      ```
+
+If you want to have more than one cookie initialized, use the "onAccept" prop.
+
+      ```javascript
+      // cookieName="gatsby-gdpr-google-analytics"
+      onAccept={() => {
+        Cookies.set("gatsby-gdpr-google-analytics")
+        Cookies.set("gatsby-gdpr-facebook-pixel")
+      }}
+      ```
+
+3. **Add cookieBanner to layout**
+In your `src/components/layout.js` import the cookieBanner component.
+
+      ```javascript
+      import CookieBanner from "@components/cookieBanner"
+
+      const Layout = ({ children }) => (
+        <>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <CookieBanner />
+        </>
+      )
+      ```
 
 ## License
 
