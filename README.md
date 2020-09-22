@@ -88,7 +88,7 @@ siteMetadata: {
 }
 ```
 
-The large summary image is located in the `static` folder, and is pulled in with a static query. All of the fields can be edit on a page-by-page basis with props.
+The image for the large summary card is located in the `static` folder, and is pulled in with a static query. All fields can be edit on a page-by-page basis with props.
 
 ```javascript
 <SEO 
@@ -103,8 +103,8 @@ The large summary image is located in the `static` folder, and is pulled in with
 
       ```javascript
       googleAnalytics: {
-        trackingId: 'UA-thisisatest', // leave empty if you want to disable the tracker
-        cookieName: 'gatsby-gdpr-google-analytics', // default
+        trackingId: 'UA-thisisatest', // ID goes here. Leave empty if you want to disable the tracker
+        cookieName: 'gatsby-gdpr-google-analytics',
         anonymize: true // default
       },
       ```
