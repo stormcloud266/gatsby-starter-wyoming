@@ -47,21 +47,21 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 
 1. **Create a Wyoming Gatsby project.**
 
-   ```sh
-   gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming
-   ```
+    ```sh
+    gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming
+    ```
 
 2. **Move Into Your New Project's Directory**
 
-  ```sh
-  gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming
-  ```
+    ```sh
+    gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming
+    ```
 
 2. **Start Developing**
 
-  ```sh
-  gatsby develop
-  ```
+    ```sh
+    gatsby develop
+    ```
 
 ### Or, quickly deploy to Netlify
 
@@ -75,10 +75,15 @@ The `src/styles/absctracts/_variable.scss` contains variables to make sitewide c
 ### Form
 Form name defaults to "contact" but can be changed through the name prop. This allows you to use the same component for multiple forms while differentiating them in Netlify Forms
 
+    ```js
+    <Form name={"application"} />
+    ```
+
 ## License
 
 
 ## Support
 
-If you enjoyed using this starter and would like to 
+If you've enjoyed using this starter and would like to show support monetarily, you can buy me a coffee here.
+
 <a href="https://www.buymeacoffee.com/tawnee" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="41" width="174"></a>
