@@ -91,7 +91,7 @@ All of the fields can be edit on a page-by-page basis with props.
 
 1. **Add tracking ID to gatsby-config.js file**
 
-      ```json
+      ```javascript
       googleAnalytics: {
         trackingId: 'UA-thisisatest', // leave empty if you want to disable the tracker
         cookieName: 'gatsby-gdpr-google-analytics', // default
@@ -100,37 +100,38 @@ All of the fields can be edit on a page-by-page basis with props.
       ```
 
 2. **Add cookingName to cookieBanner.js**
-In `src/components/cookieBanner.js` the CookieConsent component has a prop named "cookieName." The value of this prop should match the cookieName in your gatsby-config.
 
-      ```javascript
-      cookieName="gatsby-gdpr-google-analytics"
-      ```
+    In `src/components/cookieBanner.js` the CookieConsent component has a prop named "cookieName." The value of this prop should match the cookieName in your gatsby-config.
 
-If you want to have more than one cookie initialized, use the "onAccept" prop.
+    ```javascript
+    cookieName="gatsby-gdpr-google-analytics"
+    ```
 
-      ```javascript
-      // cookieName="gatsby-gdpr-google-analytics"
-      onAccept={() => {
+    If you want to have more than one cookie initialized, use the "onAccept" prop.
+    ```javascript
+    // cookieName="gatsby-gdpr-google-analytics"
+    onAccept={() => {
         Cookies.set("gatsby-gdpr-google-analytics")
         Cookies.set("gatsby-gdpr-facebook-pixel")
-      }}
-      ```
+    }}
+    ```
 
 3. **Add cookieBanner to layout**
-In your `src/components/layout.js` import the cookieBanner component.
 
-      ```javascript
-      import CookieBanner from "@components/cookieBanner"
+    In your `src/components/layout.js` import the cookieBanner component.
 
-      const Layout = ({ children }) => (
+    ```javascript
+    import CookieBanner from "@components/cookieBanner"
+
+    const Layout = ({ children }) => (
         <>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <CookieBanner />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <CookieBanner />
         </>
-      )
-      ```
+    )
+    ```
 
 ## License
 
