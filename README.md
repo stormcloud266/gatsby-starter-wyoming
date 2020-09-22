@@ -37,9 +37,6 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 * [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent)
 * [gatsby-plugin-alias-imports](https://www.gatsbyjs.com/plugins/gatsby-plugin-alias-imports/)
 
-
-
-
 ## Quick Start
 
 ### Install using the command line
@@ -62,10 +59,6 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
     ```sh
     gatsby develop
     ```
-
-### Or, quickly deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stormcloud266/gatsby-starter-wyoming)
 
 ## Customizations
 
