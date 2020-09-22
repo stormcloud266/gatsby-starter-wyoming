@@ -75,7 +75,7 @@ The `src/styles/absctracts/_variable.scss` contains variables to make sitewide c
 ### Form
 Form name defaults to "contact" but can be changed through the name prop. This allows you to use the same component for multiple forms while differentiating them in Netlify Forms
 
-    ```js
+    ```javascript
     <Form name={"application"} />
     ```
 
