@@ -76,14 +76,24 @@ Form name defaults to "contact" but can be changed through the name prop. This a
 ### SEO
 The SEO component is located in `src/components/seo.js`. 
 
-The default info can be customized in "siteMetadata" in the `gatsby-config.js` file. The large summary image is located in the `static` folder, and is pulled in with a static query. 
+The default info can be customized in "siteMetadata" in the `gatsby-config.js` file.
 
-All of the fields can be edit on a page-by-page basis with props.
+```javascript
+siteMetadata: {
+    title: `Your Wesbite's Name`,
+    description: `Your description`,
+    author: `Your Name`,
+    creator: `@UR_Twitter`, // Your Twitter handle
+    siteUrl: `https:/yourwebsite.com/`
+}
+```
+
+The image for the large summary card is located in the `static` folder, and is pulled in with a static query. All fields can be edit on a page-by-page basis with props.
 
 ```javascript
 <SEO 
-  title="Home"
-  description="My example description"
+  title="New Title Here"
+  description="New example description."
 />
 ```
 ### Analytics
@@ -91,46 +101,47 @@ All of the fields can be edit on a page-by-page basis with props.
 
 1. **Add tracking ID to gatsby-config.js file**
 
-      ```json
+      ```javascript
       googleAnalytics: {
-        trackingId: 'UA-thisisatest', // leave empty if you want to disable the tracker
-        cookieName: 'gatsby-gdpr-google-analytics', // default
+        trackingId: 'UA-thisisatest', // ID goes here. Leave empty if you want to disable the tracker
+        cookieName: 'gatsby-gdpr-google-analytics',
         anonymize: true // default
       },
       ```
 
-2. **Add cookingName to cookieBanner.js**
-In `src/components/cookieBanner.js` the CookieConsent component has a prop named "cookieName." The value of this prop should match the cookieName in your gatsby-config.
+2. **Add cookieName to cookieBanner.js**
 
-      ```javascript
-      cookieName="gatsby-gdpr-google-analytics"
-      ```
+    In `src/components/cookieBanner.js` the CookieConsent component has a prop named "cookieName." The value of this prop should match the cookieName in your gatsby-config.
 
-If you want to have more than one cookie initialized, use the "onAccept" prop.
+    ```javascript
+    cookieName="gatsby-gdpr-google-analytics"
+    ```
 
-      ```javascript
-      // cookieName="gatsby-gdpr-google-analytics"
-      onAccept={() => {
+    If you want to have more than one cookie initialized, use the "onAccept" prop.
+    ```javascript
+    // cookieName="gatsby-gdpr-google-analytics"
+    onAccept={() => {
         Cookies.set("gatsby-gdpr-google-analytics")
         Cookies.set("gatsby-gdpr-facebook-pixel")
-      }}
-      ```
+    }}
+    ```
 
 3. **Add cookieBanner to layout**
-In your `src/components/layout.js` import the cookieBanner component.
 
-      ```javascript
-      import CookieBanner from "@components/cookieBanner"
+    In your `src/components/layout.js` import the cookieBanner component.
 
-      const Layout = ({ children }) => (
+    ```javascript
+    import CookieBanner from "@components/cookieBanner"
+
+    const Layout = ({ children }) => (
         <>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <CookieBanner />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <CookieBanner />
         </>
-      )
-      ```
+    )
+    ```
 
 ## License
 
