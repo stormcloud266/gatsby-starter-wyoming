@@ -5,7 +5,8 @@ module.exports = {
     title: `Gatsby Starter Wyoming`,
     description: `Gatsby starter with SCSS, web fonts, analytics. Built with small businesses in mind.`,
     author: `Tawnee Allport`,
-    siteUrl: 'https://gatsby-starter-wyoming.netlify.app/' // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
+    creator: `@TA_Coding`, // Your Twitter handle
+    siteUrl: `https://gatsby-starter-wyoming.netlify.app/` // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

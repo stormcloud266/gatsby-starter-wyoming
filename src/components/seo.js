@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const SEO = ({
   title,
   description,
+  creator,
   url,
   imageUrl
 }) => {
@@ -15,6 +16,7 @@ const SEO = ({
         siteMetadata {
           title
           description
+          creator
           siteUrl
         }
       }
@@ -26,6 +28,7 @@ const SEO = ({
 
   const info = {
     title: title || data.site.siteMetadata.title,
+    creator: creator || data.site.siteMetadata.creator,
     description: description || data.site.siteMetadata.description,
     url: url || data.site.siteMetadata.siteUrl,
     imageUrl: imageUrl || data.site.siteMetadata.siteUrl + data.file.publicURL
@@ -41,7 +44,7 @@ const SEO = ({
       <meta name="twitter:title" content={info.title} />
       <meta name="twitter:description" content={info.description} />
       <meta name="twitter:image" content={info.imageUrl} />
-      <meta name="twitter:creator" content="@TA_Coding" />
+      <meta name="twitter:creator" content={info.creator} />
 
       {/***********  open graph ***********/}
       <meta property="og:url" content={info.url} />

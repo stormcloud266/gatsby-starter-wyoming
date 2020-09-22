@@ -81,7 +81,23 @@ Form name defaults to "contact" but can be changed through the name prop. This a
 <Form name={"application"} />
 ```
 
+### SEO
+The SEO component is located in `src/components/seo.js`. 
+
+The default info can be customized in "siteMetadata" in the `gatsby-config.js` file. The large summary image is located in the `static` folder, and is pulled in with a static query. 
+
+All of the fields can be edit on a page-by-page basis with props.
+
+```javascript
+<SEO 
+  title="Home"
+  description="My example description"
+/>
+```
+
 ## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/stormcloud266/gatsby-starter-wyoming/blob/master/LICENSE) file for more details.
 
 
 ## Support
