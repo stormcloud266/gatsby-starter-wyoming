@@ -1,8 +1,8 @@
 {
   "name": "gatsby-starter-wyoming",
   "private": true,
-  "description": "",
-  "version": "1.0",
+  "description": "Gatsby starter template designed with small business website projects in mind",
+  "version": "1.0.0",
   "author": "Tawnee Allport",
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -34,7 +34,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
