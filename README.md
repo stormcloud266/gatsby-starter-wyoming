@@ -1,6 +1,6 @@
 # gatsby-starter-wyoming
 
-This is a Gatsby.js V2 starter template designed with **small business website** projects in mind. It is a fully-responsive, one-page site with a contact form, SEO, and GDPR-compliant FB Pixel and Google Analytics integration to help get small business websites up and running fast with Gatsby. 
+This is a GatsbyJS V2 starter template designed with **small business website** projects in mind. It is a fully-responsive, one-page site with a contact form, SEO, and GDPR-compliant FB Pixel and Google Analytics integration to help get small business websites up and running fast with Gatsby. 
 
 ## Preview
 
