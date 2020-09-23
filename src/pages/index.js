@@ -8,34 +8,30 @@ import Intro from "@sections/intro"
 import TextImage from "@sections/textImage"
 import Banner from "@sections/banner"
 import CardsContainer from "@sections/cardsContainer"
-import Contact from '@sections/contact'
+import Contact from "@sections/contact"
 
 const IndexPage = ({ location }) => {
-  
   return (
-  <Layout>
+    <Layout>
+      <SEO
+        title="Home"
+        description="My example description"
+        url={location.href}
+      />
 
-    <SEO 
-      title="Home"
-      description="My example description"
-      url={location.href}
-    />
+      <Hero />
 
-    <Hero />
+      <Intro />
 
-    <Intro />
+      <TextImage />
 
-    <TextImage />
+      <Banner />
 
-    <Banner />
+      <CardsContainer />
 
-    <CardsContainer />
-
-    <Contact />
-
-
-  </Layout>
-)
+      <Contact />
+    </Layout>
+  )
 }
 
 export default IndexPage

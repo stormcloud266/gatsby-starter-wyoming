@@ -3,9 +3,9 @@
   display: flex;
   min-height: 38rem;
   text-align: center;
-  
+
   &__title {
     font-size: 4.2rem;
-    text-shadow: 2px 2px 0 rgba($color-primary, .6);
+    text-shadow: 2px 2px 0 rgba($color-primary, 0.6);
   }
 }

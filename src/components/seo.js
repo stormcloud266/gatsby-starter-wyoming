@@ -2,14 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({
-  title,
-  description,
-  creator,
-  url,
-  imageUrl
-}) => {
-
+const SEO = ({ title, description, creator, url, imageUrl }) => {
   const data = useStaticQuery(graphql`
     query SiteData {
       site {
@@ -20,7 +13,7 @@ const SEO = ({
           siteUrl
         }
       }
-      file(name: {eq: "banner"}) {
+      file(name: { eq: "banner" }) {
         publicURL
       }
     }
@@ -31,7 +24,7 @@ const SEO = ({
     creator: creator || data.site.siteMetadata.creator,
     description: description || data.site.siteMetadata.description,
     url: url || data.site.siteMetadata.siteUrl,
-    imageUrl: imageUrl || data.site.siteMetadata.siteUrl + data.file.publicURL
+    imageUrl: imageUrl || data.site.siteMetadata.siteUrl + data.file.publicURL,
   }
 
   return (
@@ -62,11 +55,7 @@ const SEO = ({
         "url": "${data.site.siteMetadata.siteUrl}",
       }
       `}</script>
-
     </Helmet>
-
-
-
   )
 }
 

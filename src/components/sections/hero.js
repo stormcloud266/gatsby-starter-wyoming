@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from "gatsby-background-image"
 
 const Hero = () => {
   const { file } = useStaticQuery(graphql`
@@ -20,7 +20,7 @@ const Hero = () => {
       className="hero"
       fluid={[
         `linear-gradient(rgba(27,25,26, 0.7), rgba(27,25,26, 0.7))`,
-        file.childImageSharp.fluid
+        file.childImageSharp.fluid,
       ]}
     >
       <h1>Wyoming</h1>

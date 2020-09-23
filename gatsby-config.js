@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path")
 
 module.exports = {
   siteMetadata: {
@@ -6,7 +6,7 @@ module.exports = {
     description: `Gatsby starter with SCSS, web fonts, analytics. Built with small businesses in mind.`,
     author: `Tawnee Allport`,
     creator: `@TA_Coding`, // Your Twitter handle
-    siteUrl: `https://gatsby-starter-wyoming.netlify.app/` // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
+    siteUrl: `https://gatsby-starter-wyoming.netlify.app/`, // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,39 +31,39 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Sacramento', 'Kumbh Sans:400']
-        }
-      }
+          families: ["Sacramento", "Kumbh Sans:400"],
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: '', // leave empty if you want to disable the tracker
-          cookieName: 'gatsby-gdpr-google-analytics', // default
-          anonymize: true // default
+          trackingId: "", // leave empty if you want to disable the tracker
+          cookieName: "gatsby-gdpr-google-analytics", // default
+          anonymize: true, // default
         },
         googleTagManager: {
-          trackingId: '', // leave empty if you want to disable the tracker
-          cookieName: 'gatsby-gdpr-google-tagmanager', // default
-          dataLayerName: 'dataLayer', // default
+          trackingId: "", // leave empty if you want to disable the tracker
+          cookieName: "gatsby-gdpr-google-tagmanager", // default
+          dataLayerName: "dataLayer", // default
         },
         facebookPixel: {
-          pixelId: '', // leave empty if you want to disable the tracker
-          cookieName: 'gatsby-gdpr-facebook-pixel', // default
+          pixelId: "", // leave empty if you want to disable the tracker
+          cookieName: "gatsby-gdpr-facebook-pixel", // default
         },
         // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production']
+        environments: ["production"],
       },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: 'https://www.example.com',
-        sitemap: 'https://www.example.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        host: "https://www.example.com",
+        sitemap: "https://www.example.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -81,11 +81,11 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          '@components': path.resolve(__dirname, 'src/components'),
-          '@sections': path.resolve(__dirname, 'src/components/sections'),
-          '@assets': path.resolve(__dirname, 'src/assets/'),
-          '@images': path.resolve(__dirname, 'src/assets/images'),
-          '@styles': path.resolve(__dirname, 'src/assets/styles/'),
+          "@components": path.resolve(__dirname, "src/components"),
+          "@sections": path.resolve(__dirname, "src/components/sections"),
+          "@assets": path.resolve(__dirname, "src/assets/"),
+          "@images": path.resolve(__dirname, "src/assets/images"),
+          "@styles": path.resolve(__dirname, "src/assets/styles/"),
         },
       },
     },

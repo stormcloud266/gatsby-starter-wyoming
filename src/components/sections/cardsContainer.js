@@ -1,25 +1,27 @@
 import React from "react"
-import Card from '@components/card'
-import { Pin, Alarm, Battery } from '@assets/icons'
+import Card from "@components/card"
+import { Pin, Alarm, Battery } from "@assets/icons"
 
 const CardsContainer = () => {
-
   const cards = [
-    { 
-      title: 'Wake Up with the Sun',
+    {
+      title: "Wake Up with the Sun",
       icon: <Alarm />,
-      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere mollitia repellat quam, quis blanditiis.'
+      body:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere mollitia repellat quam, quis blanditiis.",
     },
-    { 
-      title: 'Explore Wide Open Spaces',
+    {
+      title: "Explore Wide Open Spaces",
       icon: <Pin />,
-      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere mollitia repellat quam, quis blanditiis.'
+      body:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere mollitia repellat quam, quis blanditiis.",
     },
-    { 
-      title: 'Recharge Your Mental Batteries',
+    {
+      title: "Recharge Your Mental Batteries",
       icon: <Battery />,
-      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere mollitia repellat quam, quis blanditiis.'
-    }
+      body:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere mollitia repellat quam, quis blanditiis.",
+    },
   ]
 
   return (
@@ -27,18 +29,14 @@ const CardsContainer = () => {
       <section className="wrapper cards">
         <h2 className="cards__title">A Little Bit of Everything</h2>
         <div className="cards__container">
-
-          {
-            cards.map(card => (
-              <Card
-                key={card.title}
-                icon={card.icon}
-                title={card.title}
-                body={card.body}
-              />
-            ))
-          }
-
+          {cards.map(card => (
+            <Card
+              key={card.title}
+              icon={card.icon}
+              title={card.title}
+              body={card.body}
+            />
+          ))}
         </div>
       </section>
     </div>

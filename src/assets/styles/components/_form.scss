@@ -1,10 +1,9 @@
 .form {
-
   &__section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
@@ -12,10 +11,10 @@
 
   label {
     font-size: 1.4rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     order: 1;
     text-transform: uppercase;
-    transition: color .2s;
+    transition: color 0.2s;
   }
 
   input,
@@ -30,13 +29,12 @@
     order: 2;
     padding: 1.4rem 1.4rem 1.2rem;
     width: 100%;
-    transition: all .2s;
+    transition: all 0.2s;
 
     &:focus {
       border-color: $color-primary;
       outline: none;
     }
-
   }
 
   textarea {
@@ -48,5 +46,4 @@
   textarea:focus ~ label {
     color: $color-primary;
   }
-
 }

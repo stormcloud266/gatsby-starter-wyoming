@@ -17,14 +17,14 @@
   &__nav-list {
     display: flex;
 
-    li { 
+    li {
       margin-left: 3.6rem;
     }
 
-    a { 
+    a {
       color: $color-text;
-      transition: color .2s;
-      
+      transition: color 0.2s;
+
       &:hover,
       &:focus {
         color: $color-primary;
@@ -46,24 +46,26 @@
   }
 
   @include whenMedium {
-
     #nav-toggle {
-
       // overwrite default button styles
       background-color: transparent;
       border: none;
       color: $color-text-lighter;
       line-height: 1;
       padding: 1rem;
-      
+
       // positioning
       display: block;
       position: relative;
       z-index: 1000;
 
       // changes icon on menu toggle
-      span { display: none; }
-      .show { display: block; }
+      span {
+        display: none;
+      }
+      .show {
+        display: block;
+      }
     }
 
     &__nav {
@@ -71,7 +73,9 @@
 
       // positioning
       position: absolute;
-      top:0; left:0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       min-height: 100vh;
 
       // flex
@@ -82,7 +86,7 @@
       // transition set up
       opacity: 0;
       visibility: hidden;
-      transition: all .2s;
+      transition: all 0.2s;
 
       &.open {
         opacity: 1;
@@ -91,17 +95,26 @@
         li {
           transform: translateY(0);
           opacity: 1;
-          transition: opacity .2s, transform .2s;
+          transition: opacity 0.2s, transform 0.2s;
 
           // creates staggered delay effect
-          &:nth-child(1) { transition-delay: .1s;}
-          &:nth-child(2) { transition-delay: .15s;}
-          &:nth-child(3) { transition-delay: .2s;}
-          &:nth-child(4) { transition-delay: .25s;}
-          &:nth-child(5) { transition-delay: .3s;}
+          &:nth-child(1) {
+            transition-delay: 0.1s;
+          }
+          &:nth-child(2) {
+            transition-delay: 0.15s;
+          }
+          &:nth-child(3) {
+            transition-delay: 0.2s;
+          }
+          &:nth-child(4) {
+            transition-delay: 0.25s;
+          }
+          &:nth-child(5) {
+            transition-delay: 0.3s;
+          }
         }
       }
-
     }
 
     &__nav-list {
@@ -116,12 +129,10 @@
         transform: translateY(1rem);
       }
 
-      a { 
-        padding: .8rem 1.4rem;
+      a {
+        padding: 0.8rem 1.4rem;
         color: $color-text-lighter;
       }
     }
-
-
   } // end of whenMedium
 }

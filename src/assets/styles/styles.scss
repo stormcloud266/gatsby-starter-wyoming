@@ -1,26 +1,26 @@
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-@import 'base/animations';
-@import 'base/base';
-@import 'base/utilities';
+@import "base/animations";
+@import "base/base";
+@import "base/utilities";
 
-@import 'layout/section';
-@import 'layout/wrapper';
+@import "layout/section";
+@import "layout/wrapper";
 
-@import 'components/button';
-@import 'components/footer';
-@import 'components/form';
-@import 'components/header';
-@import 'components/card';
-@import 'components/icon';
+@import "components/button";
+@import "components/footer";
+@import "components/form";
+@import "components/header";
+@import "components/card";
+@import "components/icon";
 
-@import 'pages/home-sections/hero';
-@import 'pages/home-sections/intro';
-@import 'pages/home-sections/text-image';
-@import 'pages/home-sections/banner';
-@import 'pages/home-sections/cards-container';
-@import 'pages/home-sections/contact';
+@import "pages/home-sections/hero";
+@import "pages/home-sections/intro";
+@import "pages/home-sections/text-image";
+@import "pages/home-sections/banner";
+@import "pages/home-sections/cards-container";
+@import "pages/home-sections/contact";
 
-@import 'pages/success-and-error';
+@import "pages/success-and-error";

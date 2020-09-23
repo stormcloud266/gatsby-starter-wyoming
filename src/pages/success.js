@@ -9,15 +9,13 @@ const SuccessPage = () => (
   <Layout>
     <SEO title="Success!" />
     <section className="section wrapper success">
-
-      <img src={image} alt=""/>
+      <img src={image} alt="" />
 
       <div className="success__text">
         <h1>Thank You!</h1>
         <p>Your email has been successfully sent.</p>
         <Link to="/">Return Home</Link>
       </div>
-
     </section>
   </Layout>
 )

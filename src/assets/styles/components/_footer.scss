@@ -11,14 +11,14 @@
 
   &__text {
     display: flex;
-    
-    p { 
+
+    p {
       max-width: 40rem;
     }
   }
 
-  &__nav { 
-    flex: 1; 
+  &__nav {
+    flex: 1;
   }
 
   &__nav-list {
@@ -26,20 +26,20 @@
     justify-content: flex-end;
     flex-wrap: wrap;
 
-    li { 
+    li {
       margin-left: 3rem;
     }
   }
 
   @include whenMedium {
-    &__inner { 
+    &__inner {
       text-align: center;
     }
 
     &__text {
       flex-direction: column;
 
-      p { 
+      p {
         margin: 0 auto;
       }
     }
@@ -47,11 +47,9 @@
     &__nav-list {
       justify-content: center;
 
-      li { 
+      li {
         margin: 2rem 2rem 0 2rem;
       }
     }
-    
   } // end of whenMedium
-
 }

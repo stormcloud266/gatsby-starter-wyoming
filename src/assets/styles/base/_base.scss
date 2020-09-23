@@ -26,22 +26,30 @@ h2 {
   font-family: $font-family-header;
 }
 
-h1 { font-size: 7.6rem; }
+h1 {
+  font-size: 7.6rem;
+}
 
-h2 { font-size: 3.6rem; }
+h2 {
+  font-size: 3.6rem;
+}
 
-h3 { color: $color-text-lighter; }
+h3 {
+  color: $color-text-lighter;
+}
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
 img {
   width: 100%;
 }
 
-a { 
+a {
   text-decoration: none;
   color: $color-primary;
-  transition: color .3s;
+  transition: color 0.3s;
 
   &:hover {
     color: lighten($color-primary, 15%);

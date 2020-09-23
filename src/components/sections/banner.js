@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from "gatsby-background-image"
 
 const Banner = () => {
   const { file } = useStaticQuery(graphql`
@@ -21,7 +21,7 @@ const Banner = () => {
       id="adventure"
       fluid={[
         `linear-gradient(rgba(27,25,26, 0.7), rgba(27,25,26, 0.7))`,
-        file.childImageSharp.fluid
+        file.childImageSharp.fluid,
       ]}
     >
       <div className="wrapper wrapper--sm">
