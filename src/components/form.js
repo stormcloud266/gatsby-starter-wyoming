@@ -4,9 +4,9 @@ const Form = ({ name = "contact" }) => (
   <form
     name={name}
     className="form"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
+    // method="post"
+    // data-netlify="true"
+    // data-netlify-honeypot="bot-field"
     action="/success"
   >
     <input type="hidden" name="bot-field" />
