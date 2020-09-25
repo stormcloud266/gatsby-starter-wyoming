@@ -50,13 +50,13 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
    gatsby new wyoming-project https://github.com/stormcloud266/gatsby-starter-wyoming
    ```
 
-2. **Move Into Your New Project's Directory**
+2. **Move into your new project's directory**
 
    ```sh
    cd wyoming-project
    ```
 
-3. **Start Developing**
+3. **Start developing**
 
    ```sh
    gatsby develop
