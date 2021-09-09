@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import NavLinks from '@global/navLinks'
-import { Hamburger, Times, Logo } from '@images/icons'
+import { Hamburger, Times } from '@images/icons'
 import { Container } from '@UI'
 import * as styles from './header.module.scss'
 
@@ -12,7 +12,7 @@ const Header = () => {
 		<header className={styles.header}>
 			<Container wrapper className={styles.container}>
 				<Link to='/' className={styles.logo}>
-					<Logo />
+					Logo
 				</Link>
 
 				<button className={styles.toggle} onClick={() => toggleNav(!isOpen)}>

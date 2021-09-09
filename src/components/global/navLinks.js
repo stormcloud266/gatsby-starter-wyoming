@@ -9,22 +9,25 @@ const NavLinks = () => {
 		},
 		{
 			title: 'About',
-			to: '/about',
+			to: '/#about',
 		},
 		{
-			title: 'Blog',
-			to: '/blog',
+			title: 'Wild West',
+			to: '/#west',
+		},
+		{
+			title: 'Adventure',
+			to: '/#adventure',
 		},
 		{
 			title: 'Contact',
-			to: '/contact',
-			specialClass: 'cta',
+			to: '/#contact',
 		},
 	]
 	return (
 		<>
-			{links.map(({ title, to, specialClass }) => (
-				<Link to={to} key={to} className={specialClass ? specialClass : null}>
+			{links.map(({ title, to }) => (
+				<Link to={to} key={to}>
 					{title}
 				</Link>
 			))}
