@@ -23,7 +23,8 @@
 	a {
 		margin-left: 4rem;
 		color: $color-text-light;
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $color-cta;
 		}
 	}
@@ -57,7 +58,8 @@
 		position: relative;
 		z-index: 1000;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $color-cta;
 			background-color: transparent;
 			box-shadow: none;
