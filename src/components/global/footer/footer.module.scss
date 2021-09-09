@@ -1,15 +1,27 @@
 @import '@globalStyles/variables';
 
 .footer {
-	padding: 3.2rem 0;
-	font-size: $font-size-0;
 	background-color: $color-footer-background;
-	text-align: center;
+}
+
+.flex {
+	align-items: center;
+}
+
+.logo {
+	color: $color-primary;
+	font-size: $font-size-5;
+	font-family: $font-family-title;
+}
+
+.body {
+	max-width: 40rem;
 }
 
 .nav {
+	text-align: right;
+
 	a {
-		color: hsl(0, 0%, 100%);
-		margin: 0 2rem;
+		margin-left: 4rem;
 	}
 }

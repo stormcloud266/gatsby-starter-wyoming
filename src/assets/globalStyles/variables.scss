@@ -13,8 +13,8 @@ $color-background: hsl(330, 3%, 15%);
 $color-background-accent: hsl(330, 3%, 13%);
 $color-background-dark: hsl(330, 3%, 12%);
 
-$color-header-background: $color-background-accent;
-$color-footer-background: hsl(0, 0%, 12%);
+$color-header-background: $color-background-dark;
+$color-footer-background: $color-background-dark;
 
 ///////////////// fonts /////////////////
 $font-family: 'Kumbh Sans', sans-serif;
