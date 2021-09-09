@@ -1,0 +1,47 @@
+@import '@globalStyles/variables';
+@import '@globalStyles/mixins';
+
+.grid {
+	display: grid;
+	gap: 2rem;
+}
+
+@for $i from 1 through 6 {
+	.grid#{$i} {
+		grid-template-columns: repeat($i, 1fr);
+	}
+}
+
+.gridGapLg {
+	gap: 3.2rem;
+}
+
+.gridGapSm {
+	gap: 0.8rem;
+}
+
+@include whenMedium {
+	@for $i from 1 through 3 {
+		.grid#{$i} {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@for $i from 4 through 6 {
+		.grid#{$i} {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+
+@include whenSmall {
+	@for $i from 1 through 3 {
+		.grid#{$i} {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	@for $i from 4 through 6 {
+		.grid#{$i} {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}

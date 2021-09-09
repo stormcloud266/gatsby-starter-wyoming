@@ -1,0 +1,15 @@
+@import '@globalStyles/variables';
+
+.footer {
+	padding: 3.2rem 0;
+	font-size: $font-size-0;
+	background-color: $color-footer-background;
+	text-align: center;
+}
+
+.nav {
+	a {
+		color: hsl(0, 0%, 100%);
+		margin: 0 2rem;
+	}
+}

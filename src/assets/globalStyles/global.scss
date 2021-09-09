@@ -1,0 +1,60 @@
+@import './variables';
+@import './mixins';
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: $color-text-dark;
+	background-color: $color-background;
+	box-sizing: border-box;
+	position: relative;
+	font-size: $font-size-1;
+	font-family: $font-family;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-title;
+	line-height: 1.3;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: $color-link;
+	transition: color 0.2s;
+	&:hover {
+		color: lighten($color-link, 10%);
+	}
+}
+
+button,
+input,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
