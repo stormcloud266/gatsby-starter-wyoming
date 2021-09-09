@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Fade } from 'react-awesome-reveal'
 import classnames from 'classnames'
 import * as styles from './title.module.scss'
 
@@ -10,24 +11,39 @@ const Title = ({ tag, children, shadow, className }) => {
 		className && className
 	)
 
+	let content
+
 	switch (tag) {
 		case 'h1':
-			return <h1 className={classes}>{children}</h1>
+			content = <h1 className={classes}>{children}</h1>
+			break
 		case 'h2':
-			return <h2 className={classes}>{children}</h2>
+			content = <h2 className={classes}>{children}</h2>
+			break
 		case 'h3':
-			return <h3 className={classes}>{children}</h3>
+			content = <h3 className={classes}>{children}</h3>
+			break
 		case 'h4':
-			return <h4 className={classes}>{children}</h4>
+			content = <h4 className={classes}>{children}</h4>
+			break
 		case 'h5':
-			return <h5 className={classes}>{children}</h5>
+			content = <h5 className={classes}>{children}</h5>
+			break
 		case 'h6':
-			return <h6 className={classes}>{children}</h6>
+			content = <h6 className={classes}>{children}</h6>
+			break
 		case 'p':
-			return <p className={classes}>{children}</p>
+			content = <p className={classes}>{children}</p>
+			break
 		default:
-			return <h2 className={classes}>{children}</h2>
+			content = <h2 className={classes}>{children}</h2>
 	}
+
+	return (
+		<Fade triggerOnce fraction={0.4} duration={600}>
+			{content}
+		</Fade>
+	)
 }
 
 export default Title

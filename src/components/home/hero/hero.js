@@ -16,7 +16,6 @@ const Hero = () => {
 					objectFit='cover'
 					objectPosition='center bottom'
 					style={{ position: 'static' }}
-					placeholder='blurred'
 				/>
 			</div>
 			<Title tag='h1' shadow className={styles.title}>
