@@ -3,8 +3,13 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import * as styles from './title.module.scss'
 
-const Title = ({ tag, children, className }) => {
-	const classes = classnames(styles.title, className && className)
+const Title = ({ tag, children, shadow, className }) => {
+	const classes = classnames(
+		styles.title,
+		shadow && styles.shadow,
+		className && className
+	)
+
 	switch (tag) {
 		case 'h1':
 			return <h1 className={classes}>{children}</h1>
@@ -30,5 +35,6 @@ export default Title
 Title.propTypes = {
 	tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']),
 	className: PropTypes.string,
+	shadow: PropTypes.bool,
 	children: PropTypes.node.isRequired,
 }
