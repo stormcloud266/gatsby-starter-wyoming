@@ -7,7 +7,7 @@ import * as styles from './textImage.module.scss'
 const TextImage = () => {
 	return (
 		<Container section isSection bgAccent>
-			<Container wrapperSmOnMd textBlock>
+			<Container wrapperSmOnMd>
 				<Flex autoLayout collapseOnMd className={styles.flex}>
 					<Fade triggerOnce duration={500} fraction={0.5}>
 						<StaticImage
@@ -28,7 +28,9 @@ const TextImage = () => {
 							provident omnis aliquid in! Quasi hic in repellendus praesentium
 							unde reprehenderit eligendi cupiditate!
 						</p>
-						<Button to='/#contact'>Book Now</Button>
+						<Button to='/#contact' className={styles.button}>
+							Book Now
+						</Button>
 					</div>
 				</Flex>
 			</Container>
