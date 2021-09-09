@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Fade } from 'react-awesome-reveal'
-import { Container, Title, Button } from '@UI'
+import { Container, Title } from '@UI'
 import * as styles from './hero.module.scss'
 
 const Hero = () => {
@@ -15,7 +14,7 @@ const Hero = () => {
 					layout='fullWidth'
 					quality={100}
 					objectFit='cover'
-					objectPosition='center bottom'
+					objectPosition='center center'
 					style={{ position: 'static' }}
 				/>
 			</div>
@@ -23,11 +22,6 @@ const Hero = () => {
 				<Title tag='h1' shadow className={styles.title}>
 					Wyoming
 				</Title>
-				<Fade triggerOnce duration={500} delay={500}>
-					<Button cta to='/#contact'>
-						Contact Us Today
-					</Button>
-				</Fade>
 			</div>
 		</Container>
 	)

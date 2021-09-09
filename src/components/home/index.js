@@ -1,3 +1,4 @@
 import Hero from './hero/hero'
+import Intro from './intro/intro'
 
-export { Hero }
+export { Hero, Intro }
