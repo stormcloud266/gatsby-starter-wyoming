@@ -19,7 +19,7 @@ const Hero = () => {
 				/>
 			</div>
 			<div className={styles.content}>
-				<Title tag='h1' shadow className={styles.title}>
+				<Title tag='h1' shadow center className={styles.title}>
 					Wyoming
 				</Title>
 			</div>

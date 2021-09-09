@@ -4,10 +4,11 @@ import { Fade } from 'react-awesome-reveal'
 import classnames from 'classnames'
 import * as styles from './title.module.scss'
 
-const Title = ({ tag, children, shadow, className }) => {
+const Title = ({ tag, children, shadow, center, className }) => {
 	const classes = classnames(
 		styles.title,
 		shadow && styles.shadow,
+		center && styles.center,
 		className && className
 	)
 
@@ -40,7 +41,7 @@ const Title = ({ tag, children, shadow, className }) => {
 	}
 
 	return (
-		<Fade triggerOnce fraction={0.4} duration={600}>
+		<Fade triggerOnce fraction={1} duration={600}>
 			{content}
 		</Fade>
 	)
