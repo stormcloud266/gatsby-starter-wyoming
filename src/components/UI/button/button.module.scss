@@ -12,14 +12,14 @@
 	outline: none;
 	display: inline-block;
 	transition: all 0.2s;
-	box-shadow: 0px 0px $color-text-light-primary;
+	box-shadow: 0px 0px $color-primary;
 	text-transform: uppercase;
 	line-height: 1;
 
 	&:hover,
 	&:focus {
-		background-color: darken($color-cta, 10%);
-		color: $color-text-light-primary;
-		box-shadow: 2px 2px $color-text-light-primary;
+		background-color: darken($color-primary, 10%);
+		color: $color-text-dark-primary;
+		box-shadow: 3px 3px $color-text-light-primary;
 	}
 }
