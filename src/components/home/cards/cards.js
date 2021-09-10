@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Fade } from 'react-awesome-reveal'
 import { Card, Container, Flex, Title } from '@UI'
 import { Alarm, Pin, Battery } from '@images/icons'
 import * as styles from './cards.module.scss'
 
 const Cards = () => {
+	const [windowWidth, setWindowWidth] = useState()
+
+	const handleResize = () => {
+		setWindowWidth(window.innerWidth)
+	}
+
+	useEffect(() => {
+		handleResize()
+		window.addEventListener('resize', handleResize)
+		return () => window.removeEventListener('resize', handleResize)
+	}, [])
+
 	const cards = [
 		{
 			title: 'Wake Up with the Sun',
@@ -24,12 +37,24 @@ const Cards = () => {
 	return (
 		<Container bgAccent section isSection>
 			<Container wrapperSmOnMd>
-				<Title center margin>
+				<Title center margin fade>
 					A Little Bit of Everything
 				</Title>
 				<Flex autoLayout collapseOnMd>
-					{cards.map(({ title, text, icon }) => (
-						<Card title={title} text={text} icon={icon} key={title} />
+					{cards.map(({ title, text, icon }, i) => (
+						<Fade
+							triggerOnce
+							delay={windowWidth > 900 ? 400 * i : 0}
+							key={title}
+							fraction={0.3}
+						>
+							<Card
+								title={title}
+								text={text}
+								icon={icon}
+								className={styles.card}
+							/>
+						</Fade>
 					))}
 				</Flex>
 			</Container>

@@ -18,11 +18,10 @@ const Hero = () => {
 					style={{ position: 'static' }}
 				/>
 			</div>
-			<div className={styles.content}>
-				<Title tag='h1' shadow center className={styles.title}>
-					Wyoming
-				</Title>
-			</div>
+
+			<Title tag='h1' shadow center fade className={styles.title}>
+				Wyoming
+			</Title>
 		</Container>
 	)
 }

@@ -19,7 +19,7 @@ const Banner = () => {
 				/>
 			</div>
 
-			<Title center shadow>
+			<Title center shadow fade>
 				Your Next Adventure Starts Here
 			</Title>
 		</Container>
