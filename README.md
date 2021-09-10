@@ -21,8 +21,9 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 - SEO component with open graph, Twitter cards, and JSON LD schema
 - GDPR compliant Google Analytics and Facebook Pixel with cookie consent banner
 - Netlify form with custom success page
+- Styled 404 page
 - sitemap.xml on build
-- Lazy loaded images and background images
+- Lazy loaded images
 - Fade in on reveal animations
 - Alias imports for easy folder structuring
 
@@ -70,7 +71,7 @@ Global styles are located in `src/assets/globalStyles`. The `variables` file all
 
 ### Fonts
 
-Web fonts can be changed in the gatsby-config file, and then updated in `src/assets/globalStyles/variables`
+Web fonts can be changed in the `gatsby-config.js` file, and then updated in `src/assets/globalStyles/variables`
 
 ```javascript
 {
@@ -81,6 +82,11 @@ Web fonts can be changed in the gatsby-config file, and then updated in `src/ass
       },
    },
 },
+```
+
+```scss
+$font-family: 'Kumbh Sans', sans-serif;
+$font-family-title: 'Sacramento', cursive;
 ```
 
 ### Form
@@ -107,7 +113,9 @@ siteMetadata: {
 }
 ```
 
-The image for the large summary card is located in the `src/assets/images` folder, and is pulled in with a static query. All fields can be edit on a page-by-page basis with props.
+The image for the large summary card is located in the `src/assets/images` folder, and is pulled in with a static query.
+
+All fields can be edited on a page-by-page basis with props.
 
 ```javascript
 <SEO title='New Title Here' description='New example description.' />
@@ -147,7 +155,7 @@ The image for the large summary card is located in the `src/assets/images` folde
 
 3. **Add cookieBanner to layout**
 
-   In your `src/components/layout.js` import the cookieBanner component.
+   In your `src/components/global/layout.js` import the cookieBanner component.
 
    ```javascript
    import CookieBanner from '@components/cookieBanner'
