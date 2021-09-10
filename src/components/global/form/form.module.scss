@@ -24,11 +24,11 @@
 
 .input,
 .textarea {
-	background-color: lighten($color-background, 10%);
+	background-color: $color-form-inputs;
 	border: none;
 	border-bottom: 2px solid transparent;
 	border-radius: 2px;
-	color: $color-text-light-primary;
+	color: $color-text-primary;
 	font-family: inherit;
 	font-size: inherit;
 	order: 2;

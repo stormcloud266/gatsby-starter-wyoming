@@ -2,9 +2,11 @@ const path = require('path')
 
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Starter Stormcloud',
-		siteUrl: `https://www.gatsbyjs.com`,
-		description: `Gatsby v3 starter for getting website projects up and running fast.`,
+		title: `Gatsby Starter Wyoming`,
+		description: `Gatsby starter with SCSS, web fonts, analytics. Built with small businesses in mind.`,
+		author: `Tawnee`,
+		creator: `@stormcloud266`, // Your Twitter handle
+		siteUrl: `https://gatsby-starter-wyoming.netlify.app/`, // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
 	},
 	plugins: [
 		'gatsby-plugin-sass',

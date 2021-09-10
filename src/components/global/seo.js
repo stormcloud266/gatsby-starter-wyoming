@@ -2,7 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
-const Seo = ({ title, description, url, imageUrl, article }) => {
+const Seo = ({ title, description, url, creator, imageUrl, article }) => {
 	const data = useStaticQuery(graphql`
 		query SeoQuery {
 			file(name: { eq: "meta-card-banner" }) {
@@ -12,20 +12,18 @@ const Seo = ({ title, description, url, imageUrl, article }) => {
 				siteMetadata {
 					title
 					description
+					creator
 					siteUrl
 				}
 			}
 		}
 	`)
 
-	const cardImageUrl = imageUrl
-		? imageUrl
-		: data.site.siteMetadata.siteUrl + data.file.publicURL
-
-	const siteTitle = title ? title : data.site.siteMetadata.title
-	const siteDescription = description
-		? description
-		: data.site.siteMetadata.description
+	const cardImageUrl =
+		imageUrl || data.site.siteMetadata.siteUrl + data.file.publicURL
+	const siteTitle = title || data.site.siteMetadata.title
+	const creatorProfile = creator || data.site.siteMetadata.creator
+	const siteDescription = description || data.site.siteMetadata.description
 
 	return (
 		<Helmet>
@@ -37,6 +35,7 @@ const Seo = ({ title, description, url, imageUrl, article }) => {
 			<meta name='twitter:title' content={siteTitle} />
 			<meta name='twitter:description' content={siteDescription} />
 			<meta name='twitter:image' content={cardImageUrl} />
+			<meta name='twitter:creator' content={creatorProfile} />
 
 			{/***********  open graph ***********/}
 			<meta property='og:url' content={url} />

@@ -1,24 +1,43 @@
 ///////////////// colors /////////////////
-$color-text-light: hsl(336, 4%, 75%);
-$color-text-light-primary: hsl(330, 22%, 93%);
-$color-text-light-tertiary: hsl(0, 0%, 84%);
-$color-text-dark: hsl(240, 5%, 19%);
-$color-text-dark-primary: hsl(330, 3%, 15%);
-$color-text-dark-tertiary: hsl(240, 4%, 36%);
+
+// text
+$color-text: hsl(336, 4%, 75%);
+$color-text-primary: hsl(330, 22%, 93%);
+$color-text-tertiary: hsl(0, 0%, 84%);
+
+$color-text-accent: hsl(240, 5%, 19%);
+$color-text-accent-primary: hsl(330, 3%, 15%);
+$color-text-accent-tertiary: hsl(240, 4%, 36%);
+
+// inline links
 $color-link: hsl(10, 72%, 69%);
+$color-link-hover: hsl(10, 72%, 79%);
+
+// buttons
 $color-cta: hsl(10, 72%, 69%);
-$color-primary: hsl(10, 72%, 69%);
-$color-secondary: hsl(262, 100%, 85%);
+$color-cta-hover: hsl(10, 72%, 59%);
+
+// background
 $color-background: hsl(330, 3%, 15%);
 $color-background-accent: hsl(330, 3%, 13%);
-$color-background-dark: hsl(330, 3%, 12%);
+$color-background-dark: hsl(330, 3%, 11%);
 
+// accents
+$color-primary: hsl(10, 72%, 69%);
+$color-secondary: hsl(262, 100%, 85%);
+
+// components
 $color-header-background: $color-background-dark;
 $color-footer-background: $color-background-dark;
+$color-form-inputs: hsl(330, 3%, 25%);
 
 ///////////////// fonts /////////////////
+
+// families
 $font-family: 'Kumbh Sans', sans-serif;
 $font-family-title: 'Sacramento', cursive;
+
+// font sizes
 $font-size-0: 1.4rem;
 $font-size-1: 1.6rem;
 $font-size-2: 1.9rem;
@@ -31,8 +50,17 @@ $font-size-8: 6.4rem;
 $font-size-9: 7.6rem;
 
 ///////////////// sizes /////////////////
+
+// media query breakpoints
 $breakpoint-xsmall: 25em; // 400px
 $breakpoint-small: 37.5em; // 600px
 $breakpoint-medium: 56.25em; // 900px
+
+// wrapper widths
 $wrapper-width: 120rem;
-$wrapper-small-width: 66rem;
+$wrapper-width-small: 66rem;
+
+// section paddings
+$section-padding: 10rem;
+$section-padding-medium: 8rem;
+$section-padding-small: 6rem;

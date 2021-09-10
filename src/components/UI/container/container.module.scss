@@ -3,39 +3,39 @@
 
 // sections
 .section {
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
 }
 .sectionTop {
-	padding-top: 10rem;
+	padding-top: $section-padding;
 }
 .sectionBottom {
-	padding-bottom: 10rem;
+	padding-bottom: $section-padding;
 }
 
 @include whenMedium {
 	.section {
-		padding-top: 8rem;
-		padding-bottom: 8rem;
+		padding-top: $section-padding-medium;
+		padding-bottom: $section-padding-medium;
 	}
 	.sectionTop {
-		padding-top: 8rem;
+		padding-top: $section-padding-medium;
 	}
 	.sectionBottom {
-		padding-bottom: 8rem;
+		padding-bottom: $section-padding-medium;
 	}
 }
 
 @include whenSmall {
 	.section {
-		padding-top: 6rem;
-		padding-bottom: 6rem;
+		padding-top: $section-padding-small;
+		padding-bottom: $section-padding-small;
 	}
 	.sectionTop {
-		padding-top: 6rem;
+		padding-top: $section-padding-small;
 	}
 	.sectionBottom {
-		padding-bottom: 6rem;
+		padding-bottom: $section-padding-small;
 	}
 }
 
@@ -52,12 +52,12 @@
 }
 
 .wrapperSm {
-	max-width: $wrapper-small-width;
+	max-width: $wrapper-width-small;
 }
 
 @include whenMedium {
 	.wrapperSmOnMd {
-		max-width: $wrapper-small-width;
+		max-width: $wrapper-width-small;
 	}
 }
 

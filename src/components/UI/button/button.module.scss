@@ -4,7 +4,7 @@
 	padding: 1.4rem 2rem;
 	border-radius: 2px;
 	cursor: pointer;
-	color: $color-text-dark-primary;
+	color: $color-text-accent-primary;
 	font-size: $font-size-0;
 	font-weight: bold;
 	background-color: $color-cta;
@@ -18,8 +18,8 @@
 
 	&:hover,
 	&:focus {
-		background-color: darken($color-primary, 10%);
-		color: $color-text-dark-primary;
-		box-shadow: 3px 3px $color-text-light-primary;
+		background-color: $color-cta-hover;
+		color: $color-text-accent-primary;
+		box-shadow: 3px 3px $color-text-primary;
 	}
 }

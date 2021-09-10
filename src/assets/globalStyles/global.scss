@@ -14,7 +14,7 @@ html {
 }
 
 body {
-	color: $color-text-light;
+	color: $color-text;
 	background-color: $color-background;
 	box-sizing: border-box;
 	position: relative;
@@ -48,7 +48,7 @@ a {
 	transition: color 0.2s;
 	&:hover,
 	&:focus {
-		color: lighten($color-link, 10%);
+		color: $color-link-hover;
 	}
 }
 

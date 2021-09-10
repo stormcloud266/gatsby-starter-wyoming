@@ -22,7 +22,7 @@
 	display: flex;
 	a {
 		margin-left: 4rem;
-		color: $color-text-light;
+		color: $color-text;
 		&:hover,
 		&:focus {
 			color: $color-cta;
@@ -51,7 +51,7 @@
 		padding: 1rem;
 		line-height: 1;
 		background-color: transparent;
-		color: $color-text-light-primary;
+		color: $color-text-primary;
 
 		// positioning
 		display: block;
