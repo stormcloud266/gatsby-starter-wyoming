@@ -29,7 +29,7 @@ const Cards = () => {
 				</Title>
 				<Flex autoLayout collapseOnMd>
 					{cards.map(({ title, text, icon }) => (
-						<Card title={title} text={text} icon={icon} />
+						<Card title={title} text={text} icon={icon} key={title} />
 					))}
 				</Flex>
 			</Container>

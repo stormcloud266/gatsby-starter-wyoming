@@ -1,0 +1,15 @@
+@import '@globalStyles/mixins';
+
+.iconContainer {
+	margin-top: 2.4rem;
+	align-items: center;
+	p {
+		margin-left: 1.8rem;
+	}
+}
+
+@include whenSmall {
+	.iconContainer {
+		flex-direction: row;
+	}
+}

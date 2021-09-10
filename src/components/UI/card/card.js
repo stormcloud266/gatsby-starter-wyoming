@@ -10,10 +10,8 @@ const Card = ({ className, title, text, icon }) => {
 	return (
 		<div className={classes}>
 			<Icon>{icon}</Icon>
-			<div className={styles.textContainer}>
-				<h3 className={styles.title}>{title}</h3>
-				<p className={styles.text}>{text}</p>
-			</div>
+			<h3 className={styles.title}>{title}</h3>
+			<p>{text}</p>
 		</div>
 	)
 }

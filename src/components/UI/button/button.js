@@ -4,12 +4,8 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import * as styles from './button.module.scss'
 
-const Button = ({ href, to, cta, children, className, ...rest }) => {
-	const classes = classnames(
-		cta && styles.cta,
-		styles.button,
-		className && className
-	)
+const Button = ({ href, to, children, className, ...rest }) => {
+	const classes = classnames(styles.button, className && className)
 
 	if (href) {
 		return (
