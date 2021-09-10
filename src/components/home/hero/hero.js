@@ -19,9 +19,11 @@ const Hero = () => {
 				/>
 			</div>
 
-			<Title tag='h1' shadow center fade className={styles.title}>
-				Wyoming
-			</Title>
+			<Container wrapper>
+				<Title tag='h1' shadow center fade className={styles.title}>
+					Gatsby Starter Wyoming
+				</Title>
+			</Container>
 		</Container>
 	)
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Button } from '@UI'
 import * as styles from './form.module.scss'
 
@@ -55,3 +56,7 @@ const Form = ({ name }) => {
 }
 
 export default Form
+
+Form.propTypes = {
+	name: PropTypes.string.isRequired,
+}

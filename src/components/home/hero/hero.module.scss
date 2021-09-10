@@ -1,4 +1,5 @@
 @import '@globalStyles/variables';
+@import '@globalStyles/mixins';
 
 .container {
 	min-height: 100vh;
@@ -18,5 +19,5 @@
 }
 
 .title {
-	font-size: $font-size-9;
+	font-size: clamp(#{$font-size-7}, 7.5vw, #{$font-size-9});
 }

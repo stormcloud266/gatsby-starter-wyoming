@@ -4,7 +4,16 @@ import { Fade } from 'react-awesome-reveal'
 import classnames from 'classnames'
 import * as styles from './title.module.scss'
 
-const Title = ({ tag, children, shadow, center, margin, fade, className }) => {
+const Title = ({
+	tag,
+	children,
+	shadow,
+	center,
+	margin,
+	fade,
+	className,
+	...rest
+}) => {
 	const classes = classnames(
 		styles.title,
 		shadow && styles.shadow,
@@ -42,7 +51,7 @@ const Title = ({ tag, children, shadow, center, margin, fade, className }) => {
 	}
 
 	return fade ? (
-		<Fade triggerOnce fraction={1}>
+		<Fade triggerOnce fraction={1} {...rest}>
 			{content}
 		</Fade>
 	) : (

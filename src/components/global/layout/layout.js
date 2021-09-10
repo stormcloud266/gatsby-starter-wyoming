@@ -12,6 +12,8 @@ const Layout = ({ children }) => (
 		<Header />
 		<main>{children}</main>
 		<Footer />
+
+		{/* uncomment this component to enable cookie consent banner for GDPR compliant tracking */}
 		{/* <CookieBanner /> */}
 	</>
 )

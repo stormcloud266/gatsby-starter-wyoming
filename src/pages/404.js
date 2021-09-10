@@ -1,54 +1,44 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Fade } from 'react-awesome-reveal'
+import Layout from '@global/layout/layout'
+import Seo from '@global/seo'
+import { Container, Title, Flex, Button } from '@UI'
+import image from '@images/map-undraw.svg'
 
-// styles
-const pageStyles = {
-	color: '#232129',
-	padding: '96px',
-	fontFamily: '-apple-system, Roboto, sans-serif, serif',
-}
-const headingStyles = {
-	marginTop: 0,
-	marginBottom: 64,
-	maxWidth: 320,
-}
+const ErrorPage = () => (
+	<Layout>
+		<Seo title='Success!' />
 
-const paragraphStyles = {
-	marginBottom: 48,
-}
-const codeStyles = {
-	color: '#8A6534',
-	padding: 4,
-	backgroundColor: '#FFF4DB',
-	fontSize: '1.25rem',
-	borderRadius: 4,
-}
+		<Container
+			section
+			isSection
+			wrapper
+			textCenter
+			style={{
+				minHeight: '56rem',
+				maxWidth: '80rem',
+				display: 'flex',
+				justifyContent: 'center',
+				alignItems: 'center',
+				marginTop: '7rem',
+			}}
+		>
+			<Flex autoLayout style={{ alignItems: 'center' }}>
+				<Fade triggerOnce>
+					<img src={image} alt='' style={{ maxWidth: '28rem' }} />
+				</Fade>
+				<div>
+					<Title tag='h1' fade shadow style={{ marginBottom: '1.4rem' }}>
+						Page Not Found
+					</Title>
+					<p>The page you are looking for does not exist.</p>
+					<Button to='/' style={{ marginTop: '2rem' }}>
+						Return Home
+					</Button>
+				</div>
+			</Flex>
+		</Container>
+	</Layout>
+)
 
-// markup
-const NotFoundPage = () => {
-	return (
-		<main style={pageStyles}>
-			<title>Not found</title>
-			<h1 style={headingStyles}>Page not found</h1>
-			<p style={paragraphStyles}>
-				Sorry{' '}
-				<span role='img' aria-label='Pensive emoji'>
-					😔
-				</span>{' '}
-				we couldn’t find what you were looking for.
-				<br />
-				{process.env.NODE_ENV === 'development' ? (
-					<>
-						<br />
-						Try creating a page in <code style={codeStyles}>src/pages/</code>.
-						<br />
-					</>
-				) : null}
-				<br />
-				<Link to='/'>Go home</Link>.
-			</p>
-		</main>
-	)
-}
-
-export default NotFoundPage
+export default ErrorPage

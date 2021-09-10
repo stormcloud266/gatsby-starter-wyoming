@@ -15,6 +15,11 @@ module.exports = {
 			resolve: 'gatsby-plugin-manifest',
 			options: {
 				icon: 'src/assets/images/favicon.png',
+				short_name: `wyoming`,
+				start_url: `/`,
+				background_color: `#222021`,
+				theme_color: `#222021`,
+				display: `minimal-ui`,
 			},
 		},
 		'gatsby-plugin-mdx',
@@ -27,6 +32,15 @@ module.exports = {
 					families: ['Sacramento', 'Kumbh Sans:400'],
 				},
 			},
+		},
+
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'images',
+				path: './src/assets/images/',
+			},
+			__key: 'images',
 		},
 		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
@@ -46,16 +60,8 @@ module.exports = {
 					cookieName: 'gatsby-gdpr-facebook-pixel', // default
 				},
 				// defines the environments where the tracking should be available  - default is ["production"]
-				environments: ['production'],
+				environments: ['production', 'development'],
 			},
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'images',
-				path: './src/assets/images/',
-			},
-			__key: 'images',
 		},
 		{
 			resolve: `gatsby-plugin-alias-imports`,
