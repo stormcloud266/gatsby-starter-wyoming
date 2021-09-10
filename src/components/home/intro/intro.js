@@ -6,8 +6,8 @@ import { Container, Title } from '@UI'
 
 const Intro = () => {
 	return (
-		<Fade triggerOnce fraction={0.5}>
-			<Container section isSection wrapperSm textBlock textCenter>
+		<Fade triggerOnce fraction={0.5} id='about'>
+			<Container section isSection wrapperSm textBlock textCenter id='about'>
 				<Title>Welcome to the Wyoming Gatsby Starter</Title>
 				<p>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,

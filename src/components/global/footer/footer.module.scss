@@ -1,27 +1,50 @@
 @import '@globalStyles/variables';
+@import '@globalStyles/mixins';
 
 .footer {
 	background-color: $color-footer-background;
+	padding: 5rem 0;
 }
 
 .flex {
 	align-items: center;
+	justify-content: space-between;
+}
+
+.textContainer {
+	flex-shrink: 1;
+	max-width: 40rem;
 }
 
 .logo {
 	color: $color-primary;
 	font-size: $font-size-5;
 	font-family: $font-family-title;
-}
-
-.body {
-	max-width: 40rem;
+	margin-bottom: 1rem;
 }
 
 .nav {
 	text-align: right;
+	flex-shrink: 0;
 
 	a {
 		margin-left: 4rem;
+		display: inline-block;
+	}
+}
+
+@include whenMedium {
+	.textContainer {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.nav {
+		text-align: center;
+		a {
+			margin: 0 1rem;
+		}
+	}
+	.flex {
+		flex-wrap: wrap;
 	}
 }

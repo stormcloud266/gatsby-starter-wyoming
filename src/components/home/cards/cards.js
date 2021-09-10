@@ -44,7 +44,7 @@ const Cards = () => {
 					{cards.map(({ title, text, icon }, i) => (
 						<Fade
 							triggerOnce
-							delay={windowWidth > 900 ? 400 * i : 0}
+							delay={windowWidth > 900 ? 300 * i : 0}
 							key={title}
 							fraction={0.3}
 						>

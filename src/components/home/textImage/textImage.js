@@ -6,7 +6,7 @@ import * as styles from './textImage.module.scss'
 
 const TextImage = () => {
 	return (
-		<Container section isSection bgAccent>
+		<Container section isSection bgAccent id='west'>
 			<Fade triggerOnce fraction={0.3}>
 				<Container wrapperSmOnMd>
 					<Flex autoLayout collapseOnMd className={styles.flex}>
@@ -20,7 +20,7 @@ const TextImage = () => {
 							className={styles.image}
 						/>
 						<Container textBlock>
-							<Title>Welcome to the Wyoming Gatsby Starter</Title>
+							<Title>The Wild West</Title>
 							<p>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
 								voluptate fuga. Nostrum illo quidem facilis, perferendis nemo

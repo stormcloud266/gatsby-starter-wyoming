@@ -5,7 +5,14 @@ import * as styles from './banner.module.scss'
 
 const Banner = () => {
 	return (
-		<Container section isSection textCenter className={styles.container}>
+		<Container
+			section
+			isSection
+			textCenter
+			className={styles.container}
+			id='adventure'
+			bgDark
+		>
 			<div className={styles.background}>
 				<StaticImage
 					src='../../../assets/images/trevor-vannoy-wyoming.jpg'
