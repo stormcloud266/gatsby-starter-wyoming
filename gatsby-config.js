@@ -39,7 +39,7 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'images',
-				path: './src/assets/images/',
+				path: 'src/assets/images/',
 			},
 			__key: 'images',
 		},
@@ -61,7 +61,7 @@ module.exports = {
 					cookieName: 'gatsby-gdpr-facebook-pixel', // default
 				},
 				// defines the environments where the tracking should be available  - default is ["production"]
-				environments: ['production', 'development'],
+				environments: ['production'],
 			},
 		},
 		{
