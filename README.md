@@ -170,6 +170,8 @@ All fields can be edited on a page-by-page basis with props.
 
 ## :white_check_mark: Before Launch Checklist
 
+A short list to help make this template yours.
+
 - [ ] Update config siteMetadata
   - [ ] title
   - [ ] siteUrl
@@ -177,6 +179,8 @@ All fields can be edited on a page-by-page basis with props.
   - [ ] description
 - [ ] Replace favicon
 - [ ] Replace `meta-card-banner` (used in Twitter cards and OG Data)
+- [ ] Add GA or FB tracking IDs (if applicable)
+- [ ] Enable CookieConsent (if applicable)
 
 ## License
 
