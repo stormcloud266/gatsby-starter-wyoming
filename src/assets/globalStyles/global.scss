@@ -22,13 +22,22 @@ body {
 	font-size: $font-size-1;
 	font-family: $font-family;
 	line-height: 1.6;
+}
+
+h1,
+a,
+p {
 	opacity: 0;
 	transition: opacity 0.5s;
 }
 
-html.wf-active body,
-html.wf-inactive body {
-	opacity: 1;
+html.wf-active,
+html.wf-inactive {
+	h1,
+	a,
+	p {
+		opacity: 1;
+	}
 }
 
 h1,
