@@ -27,16 +27,14 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 - Fade in on reveal animations
 - Alias imports for easy folder structuring
 
-## Quick Start
+## :rocket: Quick Start
 
 ### Install using the command line
 
-:warning: You will need [Node](https://nodejs.org/en/) and [Gatsby](https://www.gatsbyjs.com/docs/quick-start/) installed.
-
-1. **Create a Wyoming Gatsby project.**
+1. **Create your new project.**
 
    ```sh
-   npx gatsby new gatsby-starter-wyoming https://github.com/stormcloud266/gatsby-starter-wyoming
+   git clone https://github.com/stormcloud266/gatsby-starter-wyoming
    ```
 
 2. **Move into your new project's directory**
@@ -57,7 +55,7 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
    yarn develop
    ```
 
-## Customizations
+## :art: Customizations
 
 ### Global Styles
 
@@ -170,7 +168,7 @@ All fields can be edited on a page-by-page basis with props.
    )
    ```
 
-## Before Launch Checklist
+## :white_check_mark: Before Launch Checklist
 
 - [] Update config siteMetadata
   - [] title
