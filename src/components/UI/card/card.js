@@ -1,22 +1,19 @@
 import React from 'react'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
+import { Icon } from '@UI'
 import * as styles from './card.module.scss'
 
-const Card = ({ image, children, shadow, outline, className }) => {
-	const cardImage = getImage(image)
-	const classes = classnames(
-		shadow && styles.shadow,
-		outline && styles.outline,
-		className && className,
-		styles.card
-	)
+const Card = ({ className, title, text, icon }) => {
+	const classes = classnames(className && className, styles.card)
 
 	return (
 		<div className={classes}>
-			<GatsbyImage image={cardImage} alt='' className={styles.image} />
-			<div className={styles.textContainer}>{children}</div>
+			<Icon>{icon}</Icon>
+			<div className={styles.textContainer}>
+				<h3 className={styles.title}>{title}</h3>
+				<p className={styles.text}>{text}</p>
+			</div>
 		</div>
 	)
 }
@@ -24,9 +21,8 @@ const Card = ({ image, children, shadow, outline, className }) => {
 export default Card
 
 Card.propTypes = {
-	shadow: PropTypes.bool,
-	outline: PropTypes.bool,
-	image: PropTypes.object,
+	title: PropTypes.string,
+	text: PropTypes.string,
+	icon: PropTypes.node,
 	className: PropTypes.string,
-	children: PropTypes.node.isRequired,
 }
