@@ -170,13 +170,13 @@ All fields can be edited on a page-by-page basis with props.
 
 ## :white_check_mark: Before Launch Checklist
 
-- [] Update config siteMetadata
-  - [] title
-  - [] siteUrl
-  - [] creator
-  - [] description
-- [] Replace favicon
-- [] Replace `meta-card-banner` (used in Twitter cards and OG Data)
+- [ ] Update config siteMetadata
+  - [ ] title
+  - [ ] siteUrl
+  - [ ] creator
+  - [ ] description
+- [ ] Replace favicon
+- [ ] Replace `meta-card-banner` (used in Twitter cards and OG Data)
 
 ## License
 
