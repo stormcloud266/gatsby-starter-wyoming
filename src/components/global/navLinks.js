@@ -1,34 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import config from '@config'
 
 const NavLinks = () => {
-	const links = [
-		{
-			title: 'Home',
-			to: '/',
-		},
-		{
-			title: 'About',
-			to: '/#about',
-		},
-		{
-			title: 'Wild West',
-			to: '/#west',
-		},
-		{
-			title: 'Adventure',
-			to: '/#adventure',
-		},
-		{
-			title: 'Contact',
-			to: '/#contact',
-		},
-	]
 	return (
 		<>
-			{links.map(({ title, to }) => (
-				<Link to={to} key={to}>
-					{title}
+			{config.navLinks.map(({ text, to }, i) => (
+				<Link to={to} key={i}>
+					{text}
 				</Link>
 			))}
 		</>

@@ -60,20 +60,3 @@ textarea {
 	font-size: inherit;
 	line-height: inherit;
 }
-
-// stop FOUT in hero on load
-h1,
-a,
-p {
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-
-html.wf-active,
-html.wf-inactive {
-	h1,
-	a,
-	p {
-		opacity: 1;
-	}
-}

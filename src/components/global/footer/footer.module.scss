@@ -23,6 +23,25 @@
 	margin-bottom: 1rem;
 }
 
+.copyright {
+	color: $color-text-tertiary;
+	font-size: $font-size-0;
+	margin-top: 0.8rem;
+}
+
+.socialIcons {
+	display: flex;
+	margin-top: 1.4rem;
+
+	a {
+		margin-right: 1rem;
+
+		&:hover span {
+			background-color: $color-cta-hover;
+		}
+	}
+}
+
 .nav {
 	text-align: right;
 	flex-shrink: 0;
@@ -30,21 +49,32 @@
 	a {
 		margin-left: 4rem;
 		display: inline-block;
+		transition: color 0.3s;
 	}
 }
 
 @include whenMedium {
 	.textContainer {
 		text-align: center;
-		margin-bottom: 2rem;
+		margin-bottom: 2.8rem;
 	}
+
 	.nav {
 		text-align: center;
 		a {
 			margin: 0 1rem;
 		}
 	}
+
 	.flex {
 		flex-wrap: wrap;
+	}
+
+	.socialIcons {
+		justify-content: center;
+
+		a {
+			margin: 0 1rem;
+		}
 	}
 }

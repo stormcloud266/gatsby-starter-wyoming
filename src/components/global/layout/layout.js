@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import Helmet from 'react-helmet'
 import Header from '@global/header/header'
 import Footer from '@global/footer/footer'
 // import CookieBanner from '@global/cookieBanner'
@@ -9,6 +9,7 @@ import '@globalStyles/global.scss'
 
 const Layout = ({ children }) => (
 	<>
+		<Helmet htmlAttributes={{ lang: 'en' }} />
 		<Header />
 		<main>{children}</main>
 		<Footer />

@@ -12,7 +12,7 @@ const TextImage = () => {
 					<Flex autoLayout collapseOnMd className={styles.flex}>
 						<StaticImage
 							src='../../../assets/images/sean-musil-wyoming.jpg'
-							alt=''
+							alt='large lake surrounded by trees at sunset.'
 							placeholder='blurred'
 							layout='constrained'
 							quality={100}

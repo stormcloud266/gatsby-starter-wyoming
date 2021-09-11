@@ -17,10 +17,19 @@ const Footer = () => {
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. In
 								obcaecati vitae consectetur.
 							</p>
-							<div>
-								{config.socialLinks.map(({ url, icon }) => (
-									<a href={url} target='_blank' rel='noreferrer' key={url}>
-										<Icon>{icon}</Icon>
+							<p className={styles.copyright}>
+								Copyright &#169; {config.copyright}
+							</p>
+							<div className={styles.socialIcons}>
+								{config.socialLinks.map(({ label, url, icon }) => (
+									<a
+										href={url}
+										target='_blank'
+										rel='noreferrer'
+										key={url}
+										aria-label={`Go to ${label}`}
+									>
+										<Icon sm>{icon}</Icon>
 									</a>
 								))}
 							</div>

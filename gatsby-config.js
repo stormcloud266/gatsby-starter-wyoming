@@ -5,10 +5,7 @@ const config = require('./src/data/config')
 https://www.gatsbyjs.com/docs/creating-a-starter/#gatsby-skip-here
 https://github.com/smakosh/gatsby-portfolio-dev/blob/master/gatsby-config.js
 
-make data more configurable
 lighthouse test
-image alts
-icons
 
 */
 

@@ -89,8 +89,7 @@ $font-family-title: 'Sacramento', cursive;
 
 ### Icons
 
-https://teenyicons.com/
-https://react-svgr.com/playground/
+The icons used in this project come from [TeenyIcons](https://teenyicons.com/). They are copied into the `src/assets/images/icons.js` file. They can be converted to React components using [this tool](https://react-svgr.com/playground/).
 
 ### Form
 

@@ -17,10 +17,14 @@ const config = {
 	siteUrl: `https://gatsby-starter-wyoming.netlify.app/`, // keep trailing slash
 	webFonts: ['Sacramento', 'Kumbh Sans:400'],
 	socialLinks: [
-		{ url: 'https://www.twitter.com', icon: <Twitter /> },
-		{ url: 'https://www.facebook.com', icon: <Facebook /> },
-		{ url: 'https://www.linkedin.com', icon: <LinkedIn /> },
-		{ url: 'https://www.instagram.com', icon: <Instagram /> },
+		{ label: 'Twitter', url: 'https://www.twitter.com', icon: <Twitter /> },
+		{ label: 'Facebook', url: 'https://www.facebook.com', icon: <Facebook /> },
+		{ label: 'LinkedIn', url: 'https://www.linkedin.com', icon: <LinkedIn /> },
+		{
+			label: 'Instagram',
+			url: 'https://www.instagram.com',
+			icon: <Instagram />,
+		},
 	],
 	analytics: {
 		googleAnalyticsID: '',
@@ -37,6 +41,13 @@ const config = {
 		background_color: `#222021`,
 		theme_color: `#222021`,
 	},
+	navLinks: [
+		{ text: 'Home', to: '/' },
+		{ text: 'About', to: '/#about' },
+		{ text: 'Wild West', to: '/#west' },
+		{ text: 'Adventure', to: '/#adventure' },
+		{ text: 'Contact', to: '/#contact' },
+	],
 	copyright: '2021',
 }
 

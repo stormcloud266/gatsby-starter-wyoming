@@ -20,7 +20,7 @@ const Contact = () => {
 							</p>
 						</Container>
 						{config.contact.map(({ text, icon }) => (
-							<Flex className={styles.iconContainer}>
+							<Flex className={styles.iconContainer} key={text}>
 								<Icon>{icon}</Icon>
 								<p>{text}</p>
 							</Flex>

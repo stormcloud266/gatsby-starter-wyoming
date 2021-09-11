@@ -10,9 +10,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 0.2s;
 
 	svg {
 		color: $color-text-accent;
 		display: block;
 	}
+}
+
+.small {
+	height: 3.2rem;
+	width: 3.2rem;
 }
