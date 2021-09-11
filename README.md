@@ -6,7 +6,7 @@ This is a GatsbyJS V3 starter template designed with **small business website** 
 
 [Visit Site](https://gatsby-starter-wyoming.netlify.app/)
 
-![](https://github.com/stormcloud266/gatsby-starter-wyoming/blob/master/screenshot.gif)
+![](https://raw.githubusercontent.com/stormcloud266/content/main/gatsby-starter-wyoming/screenshot.gif)
 
 ## Overview
 
