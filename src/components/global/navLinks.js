@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import config from '@config'
+import links from '@data/links'
 
 const NavLinks = () => {
 	return (
 		<>
-			{config.navLinks.map(({ text, to }, i) => (
+			{links.navLinks.map(({ text, to }, i) => (
 				<Link to={to} key={i}>
 					{text}
 				</Link>

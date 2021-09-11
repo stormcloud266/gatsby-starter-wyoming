@@ -2,7 +2,7 @@ import React from 'react'
 import Form from '@global/form/form'
 import { Fade } from 'react-awesome-reveal'
 import { Container, Flex, Title, Icon } from '@UI'
-import config from '@config'
+import links from '@data/links'
 import * as styles from './contact.module.scss'
 
 const Contact = () => {
@@ -19,10 +19,16 @@ const Contact = () => {
 								quidem aperiam?
 							</p>
 						</Container>
-						{config.contact.map(({ text, icon }) => (
+						{links.contact.map(({ text, icon, url, openInNewTab }) => (
 							<Flex className={styles.iconContainer} key={text}>
 								<Icon>{icon}</Icon>
-								<p>{text}</p>
+								<a
+									href={url}
+									target={openInNewTab ? '_blank' : '_self'}
+									rel='noreferrer'
+								>
+									{text}
+								</a>
 							</Flex>
 						))}
 					</div>

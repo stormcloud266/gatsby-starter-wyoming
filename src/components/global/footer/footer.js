@@ -2,7 +2,8 @@ import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import NavLinks from '@global/navLinks'
 import { Container, Flex, Icon } from '@UI'
-import config from '@config'
+import * as config from '@data/config'
+import links from '@data/links'
 import * as styles from './footer.module.scss'
 
 const Footer = () => {
@@ -21,7 +22,7 @@ const Footer = () => {
 								Copyright &#169; {config.copyright}
 							</p>
 							<div className={styles.socialIcons}>
-								{config.socialLinks.map(({ label, url, icon }) => (
+								{links.socialLinks.map(({ label, url, icon }) => (
 									<a
 										href={url}
 										target='_blank'

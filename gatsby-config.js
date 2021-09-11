@@ -1,13 +1,5 @@
 const path = require('path')
 const config = require('./src/data/config')
-/*
-
-https://www.gatsbyjs.com/docs/creating-a-starter/#gatsby-skip-here
-https://github.com/smakosh/gatsby-portfolio-dev/blob/master/gatsby-config.js
-
-lighthouse test
-
-*/
 
 module.exports = {
 	siteMetadata: {
@@ -90,7 +82,7 @@ module.exports = {
 					'@UI': path.resolve(__dirname, 'src/components/UI'),
 					'@images': path.resolve(__dirname, 'src/assets/images'),
 					'@globalStyles': path.resolve(__dirname, 'src/assets/globalStyles'),
-					'@config': path.resolve(__dirname, 'src/data/config'),
+					'@data': path.resolve(__dirname, 'src/data'),
 				},
 			},
 		},
