@@ -1,12 +1,24 @@
 const path = require('path')
+const config = require('./src/data/config')
+/*
+
+https://www.gatsbyjs.com/docs/creating-a-starter/#gatsby-skip-here
+https://github.com/smakosh/gatsby-portfolio-dev/blob/master/gatsby-config.js
+
+make data more configurable
+lighthouse test
+image alts
+icons
+
+*/
 
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Starter Wyoming`,
-		description: `Gatsby starter with SCSS, web fonts, analytics. Built with small businesses in mind.`,
-		author: `Tawnee`,
-		creator: `@stormcloud266`, // Your Twitter handle
-		siteUrl: `https://gatsby-starter-wyoming.netlify.app/`, // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
+		title: config.title,
+		description: config.description,
+		author: config.author,
+		creator: config.creator,
+		siteUrl: config.siteUrl,
 	},
 	plugins: [
 		'gatsby-plugin-sass',
@@ -16,11 +28,11 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				icon: 'src/assets/images/favicon.png',
-				short_name: `wyoming`,
+				icon: 'static/favicon.png',
+				short_name: config.manifest.short_name,
 				start_url: `/`,
-				background_color: `#222021`,
-				theme_color: `#222021`,
+				background_color: config.manifest.background_color,
+				theme_color: config.manifest.theme_color,
 				display: `minimal-ui`,
 			},
 		},
@@ -31,7 +43,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-web-font-loader',
 			options: {
 				google: {
-					families: ['Sacramento', 'Kumbh Sans:400'],
+					families: config.webFonts,
 				},
 			},
 		},
@@ -44,20 +56,28 @@ module.exports = {
 			__key: 'images',
 		},
 		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'static',
+				path: 'static/',
+			},
+			__key: 'static',
+		},
+		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
 				googleAnalytics: {
-					trackingId: '', // leave empty if you want to disable the tracker
+					trackingId: config.analytics.googleAnalyticsID, // leave empty if you want to disable the tracker
 					cookieName: 'gatsby-gdpr-google-analytics', // default
 					anonymize: true, // default
 				},
 				googleTagManager: {
-					trackingId: '', // leave empty if you want to disable the tracker
+					trackingId: config.analytics.googleTagManagerID, // leave empty if you want to disable the tracker
 					cookieName: 'gatsby-gdpr-google-tagmanager', // default
 					dataLayerName: 'dataLayer', // default
 				},
 				facebookPixel: {
-					pixelId: '', // leave empty if you want to disable the tracker
+					pixelId: config.analytics.facebookPixelID, // leave empty if you want to disable the tracker
 					cookieName: 'gatsby-gdpr-facebook-pixel', // default
 				},
 				// defines the environments where the tracking should be available  - default is ["production"]
@@ -73,6 +93,7 @@ module.exports = {
 					'@UI': path.resolve(__dirname, 'src/components/UI'),
 					'@images': path.resolve(__dirname, 'src/assets/images'),
 					'@globalStyles': path.resolve(__dirname, 'src/assets/globalStyles'),
+					'@config': path.resolve(__dirname, 'src/data/config'),
 				},
 			},
 		},

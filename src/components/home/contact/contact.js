@@ -2,7 +2,7 @@ import React from 'react'
 import Form from '@global/form/form'
 import { Fade } from 'react-awesome-reveal'
 import { Container, Flex, Title, Icon } from '@UI'
-import { Phone, Email, Pin } from '@images/icons'
+import config from '@config'
 import * as styles from './contact.module.scss'
 
 const Contact = () => {
@@ -19,24 +19,12 @@ const Contact = () => {
 								quidem aperiam?
 							</p>
 						</Container>
-						<Flex className={styles.iconContainer}>
-							<Icon>
-								<Phone />
-							</Icon>
-							<p>(555) 123 - 4567</p>
-						</Flex>
-						<Flex className={styles.iconContainer}>
-							<Icon>
-								<Email />
-							</Icon>
-							<p>ex@mple.com</p>
-						</Flex>
-						<Flex className={styles.iconContainer}>
-							<Icon>
-								<Pin />
-							</Icon>
-							<p>123 Street, City ST</p>
-						</Flex>
+						{config.contact.map(({ text, icon }) => (
+							<Flex className={styles.iconContainer}>
+								<Icon>{icon}</Icon>
+								<p>{text}</p>
+							</Flex>
+						))}
 					</div>
 					<Form name='contact' />
 				</Flex>

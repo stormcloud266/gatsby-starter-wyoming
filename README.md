@@ -87,6 +87,11 @@ $font-family: 'Kumbh Sans', sans-serif;
 $font-family-title: 'Sacramento', cursive;
 ```
 
+### Icons
+
+https://teenyicons.com/
+https://react-svgr.com/playground/
+
 ### Form
 
 The default form name is "contact" but can be changed through the `name` prop. This allows you to use the same component for multiple forms while differentiating them in Netlify Forms
@@ -184,7 +189,7 @@ A short list to help make this template yours.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/stormcloud266/gatsby-starter-wyoming/blob/master/LICENSE) file for more details.
+This project is licensed under the BSD Zero Clause License. See the [LICENSE](https://choosealicense.com/licenses/0bsd/) file for more details.
 
 ## Support
 
