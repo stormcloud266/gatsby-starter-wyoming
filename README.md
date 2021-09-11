@@ -12,20 +12,35 @@ This is a GatsbyJS V3 starter template designed with **small business website** 
 
 This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-default) and comes with all the default plugins.
 
-**Features**
+### Features
 
-- Styling with SCSS modules
-- Full responsive design
+**Configurable**
+
 - Easy style customization with SCSS variables
-- Responsive header component with desktop and mobile nav
+- Site data, links, and icons located in data folder
+- Alias imports for easy folder structuring
+- Intuitive styling with SCSS modules
+
+**Accessible**
+
+- Skip link
+- Keyboard navigable
+- Aria labels and alt tags
+- Sematic html
+
+**SEO Optimized**
+
 - SEO component with open graph, Twitter cards, and JSON LD schema
 - GDPR compliant Google Analytics and Facebook Pixel with cookie consent banner
+- sitemap.xml on build
+
+**Ready for Launch**
+
+- Full responsive design
+- Header component with desktop and mobile nav
+- Lazy loaded images
 - Netlify form with custom success page
 - Styled 404 page
-- sitemap.xml on build
-- Lazy loaded images
-- Fade in on reveal animations
-- Alias imports for easy folder structuring
 
 ## :rocket: Quick Start
 
@@ -57,6 +72,12 @@ This starter is based on [Gatsby Starter Default](https://github.com/gatsbyjs/ga
 
 ## :art: Customizations
 
+### Configuration
+
+User data can be configured in the `src/data` folder. The `config.js` file contains all the options for title, descriptions, analytics ids, etc. The `gatsby-config` file pulls info from this file.
+
+All links and associated icons are located in the `links.js` file.
+
 ### Global Styles
 
 Global styles are located in `src/assets/globalStyles`. The `variables` file allows for site-wide style changes including the following:
@@ -69,17 +90,12 @@ Global styles are located in `src/assets/globalStyles`. The `variables` file all
 
 ### Fonts
 
-Web fonts can be changed in the `gatsby-config.js` file, and then updated in `src/assets/globalStyles/variables`
+Web fonts can be changed in the `src/data/config.js` file, and then updated in `src/assets/globalStyles/variables`
 
 ```javascript
 {
-   resolve: 'gatsby-plugin-web-font-loader',
-   options: {
-      google: {
-         families: ['Sacramento', 'Kumbh Sans:400'],
-      },
-   },
-},
+   webFonts: ['Sacramento', 'Kumbh Sans:400'],
+}
 ```
 
 ```scss
@@ -101,23 +117,11 @@ The default form name is "contact" but can be changed through the `name` prop. T
 
 ### SEO
 
-The SEO component is located in `src/components/global/seo.js`.
+The image for the large summary card is located in the `static/` folder, and is pulled in with a static query.
 
-The default info can be customized in `siteMetadata` in the `gatsby-config.js` file.
+Default info can be updated in the `src/data/config.js`. All fields can be edited on a page-by-page basis with props.
 
-```javascript
-siteMetadata: {
-    title: `Default page title`,
-    description: `Default meta description`,
-    author: `Your Name`,
-    creator: `@UR_Twitter`, // Your Twitter handle
-    siteUrl: `https://yourwebsite.com/`
-}
-```
-
-The image for the large summary card is located in the `src/assets/images` folder, and is pulled in with a static query.
-
-All fields can be edited on a page-by-page basis with props.
+Create your own schema [here](https://hallanalysis.com/json-ld-generator/) or read more [here](https://schema.org/).
 
 ```javascript
 <SEO title='New Title Here' description='New example description.' />
@@ -127,13 +131,13 @@ All fields can be edited on a page-by-page basis with props.
 
 :warning: To start using analytics, you will need your Google Analytics tracking ID and/or Facebook Pixel ID.
 
-1. **Add tracking ID to gatsby-config.js file**
+1. **Add tracking ID to src/data/config.js file**
 
    ```javascript
-   googleAnalytics: {
-     trackingId: 'UA-thisisatest', // ID goes here. Leave empty if you want to disable the tracker
-     cookieName: 'gatsby-gdpr-google-analytics',
-     anonymize: true // default
+   analytics: {
+   	googleAnalyticsID: 'UA-thisisatest',
+   	googleTagManagerID: '',
+   	facebookPixelID: '',
    },
    ```
 
@@ -176,7 +180,7 @@ All fields can be edited on a page-by-page basis with props.
 
 A short list to help make this template yours.
 
-- [ ] Update config siteMetadata
+- [ ] Update site's config data
   - [ ] title
   - [ ] siteUrl
   - [ ] creator
