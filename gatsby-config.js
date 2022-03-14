@@ -25,7 +25,6 @@ module.exports = {
 				display: `minimal-ui`,
 			},
 		},
-		'gatsby-plugin-mdx',
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
 		{
