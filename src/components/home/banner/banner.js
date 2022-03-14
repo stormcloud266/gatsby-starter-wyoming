@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Container, Title } from '@UI'
 import * as styles from './banner.module.scss'
 
-const Banner = () => {
+const Banner = ({ title }) => {
 	return (
 		<Container
 			section
@@ -28,7 +28,7 @@ const Banner = () => {
 
 			<Container wrapper>
 				<Title center shadow fade>
-					Your Next Adventure Starts Here
+					{title}
 				</Title>
 			</Container>
 		</Container>

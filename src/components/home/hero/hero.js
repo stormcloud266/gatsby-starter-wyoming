@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Container, Title } from '@UI'
 import * as styles from './hero.module.scss'
 
-const Hero = () => {
+const Hero = ({ title }) => {
 	return (
 		<Container className={styles.container}>
 			<div className={styles.background}>
@@ -21,7 +21,7 @@ const Hero = () => {
 
 			<Container wrapper>
 				<Title tag='h1' shadow center fade className={styles.title}>
-					Gatsby Starter Wyoming
+					{title}
 				</Title>
 			</Container>
 		</Container>

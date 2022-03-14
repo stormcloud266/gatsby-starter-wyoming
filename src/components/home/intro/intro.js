@@ -4,18 +4,13 @@ import { Fade } from 'react-awesome-reveal'
 import { Container, Title } from '@UI'
 // import * as styles from './intro.module.scss'
 
-const Intro = () => {
+const Intro = ({ title, body, linkText, linkUrl }) => {
 	return (
 		<Fade triggerOnce fraction={0.5} id='about'>
 			<Container section isSection wrapperSm textBlock textCenter id='about'>
-				<Title>Welcome to the Wyoming Gatsby Starter</Title>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
-					voluptate fuga. Nostrum illo quidem facilis, perferendis nemo
-					provident omnis aliquid in! Quasi hic in repellendus praesentium unde
-					reprehenderit eligendi cupiditate!
-				</p>
-				<Link to='/#contact'>Start Your Adventure</Link>
+				<Title>{title}</Title>
+				<p>{body}</p>
+				<Link to={linkUrl}>{linkText}</Link>
 			</Container>
 		</Fade>
 	)

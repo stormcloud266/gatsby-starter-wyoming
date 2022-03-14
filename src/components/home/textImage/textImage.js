@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal'
 import { Container, Title, Flex, Button } from '@UI'
 import * as styles from './textImage.module.scss'
 
-const TextImage = () => {
+const TextImage = ({ title, body, linkText, linkUrl }) => {
 	return (
 		<Container section isSection bgAccent id='west'>
 			<Fade triggerOnce fraction={0.3}>
@@ -20,14 +20,9 @@ const TextImage = () => {
 							className={styles.image}
 						/>
 						<Container textBlock>
-							<Title>The Wild West</Title>
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
-								voluptate fuga. Nostrum illo quidem facilis, perferendis nemo
-								provident omnis aliquid in! Quasi hic in repellendus praesentium
-								unde reprehenderit eligendi cupiditate!
-							</p>
-							<Button to='/#contact'>Book Now</Button>
+							<Title>{title}</Title>
+							<p>{body}</p>
+							<Button to={linkUrl}>{linkText}</Button>
 						</Container>
 					</Flex>
 				</Container>

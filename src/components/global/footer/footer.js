@@ -4,6 +4,7 @@ import NavLinks from '@global/navLinks'
 import { Container, Flex, Icon } from '@UI'
 import * as config from '@data/config'
 import links from '@data/links'
+import { content } from '@data/content'
 import * as styles from './footer.module.scss'
 
 const Footer = () => {
@@ -14,10 +15,7 @@ const Footer = () => {
 					<Flex collapseOnMd className={styles.flex}>
 						<div className={styles.textContainer}>
 							<p className={styles.logo}>Logo</p>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-								obcaecati vitae consectetur.
-							</p>
+							<p>{content.footerText}</p>
 							<p className={styles.copyright}>
 								Copyright &#169; {config.copyright}
 							</p>
