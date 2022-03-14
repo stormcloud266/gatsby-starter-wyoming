@@ -19,7 +19,7 @@ const TextImage = ({ title, body, linkText, linkUrl }) => {
 							width={700}
 							className={styles.image}
 						/>
-						<Container textBlock>
+						<Container textBlock className={styles.textBlock}>
 							<Title>{title}</Title>
 							<p>{body}</p>
 							<Button to={linkUrl}>{linkText}</Button>

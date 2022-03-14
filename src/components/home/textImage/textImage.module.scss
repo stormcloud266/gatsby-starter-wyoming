@@ -1,3 +1,5 @@
+@import '@globalStyles/mixins';
+
 .flex {
 	align-items: center;
 }
@@ -8,4 +10,10 @@
 
 .body {
 	padding-top: 0;
+}
+
+@include whenMedium {
+	.textBlock {
+		margin-top: 4rem;
+	}
 }

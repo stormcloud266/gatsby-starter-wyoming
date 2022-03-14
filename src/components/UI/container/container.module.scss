@@ -103,7 +103,7 @@
 .textBlock {
 	h1,
 	h2 {
-		margin-bottom: 1.8rem;
+		margin-bottom: 1.6rem;
 	}
 	h3,
 	h4,
@@ -123,8 +123,9 @@
 		padding-top: 1.6rem;
 	}
 
-	.button {
-		margin-top: 1rem;
+	a,
+	button {
+		margin-top: 1.6rem;
 	}
 
 	& > *:last-child {
