@@ -11,7 +11,7 @@ const TextImage = ({ title, body, linkText, linkUrl }) => {
 				<Container wrapperSmOnMd>
 					<Flex autoLayout collapseOnMd className={styles.flex}>
 						<StaticImage
-							src='../../../assets/images/sean-musil-wyoming.jpg'
+							src='../../../assets/images/about.jpg'
 							alt='large lake surrounded by trees at sunset.'
 							placeholder='blurred'
 							layout='constrained'

@@ -15,7 +15,7 @@ const Banner = ({ title }) => {
 		>
 			<div className={styles.background}>
 				<StaticImage
-					src='../../../assets/images/trevor-vannoy-wyoming.jpg'
+					src='../../../assets/images/cta.jpg'
 					alt=''
 					placeholder='blurred'
 					layout='fullWidth'
