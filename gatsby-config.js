@@ -29,11 +29,10 @@ module.exports = {
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
 		{
-			resolve: 'gatsby-plugin-web-font-loader',
+			resolve: `gatsby-plugin-google-fonts`,
 			options: {
-				google: {
-					families: config.webFonts,
-				},
+				fonts: config.webFonts,
+				display: 'swap',
 			},
 		},
 		{
