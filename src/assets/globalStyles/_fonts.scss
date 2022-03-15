@@ -1,0 +1,18 @@
+/* sacramento-regular - latin */
+@font-face {
+	font-family: 'Sacramento';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/sacramento-v12-latin-regular.woff2') format('woff2'),
+		url('../fonts/sacramento-v12-latin-regular.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Kumbh Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''), url('/fonts/kumbh-sans-400.woff2') format('woff2'),
+		url('/fonts/kumbh-sans-400.woff') format('woff');
+	font-display: swap;
+}

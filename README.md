@@ -90,13 +90,7 @@ Global styles are located in `src/assets/globalStyles`. The `variables` file all
 
 ### Fonts
 
-Web fonts can be changed in the `src/data/config.js` file, and then updated in `src/assets/globalStyles/variables`
-
-```javascript
-{
-   webFonts: ['Sacramento', 'Kumbh Sans:400'],
-}
-```
+Web fonts are located in the `static/fonts` directory can be changed in the `src/globalStyles/_fonts.scss` file. The can then be updated in `src/assets/globalStyles/_variables.scss`
 
 ```scss
 $font-family: 'Kumbh Sans', sans-serif;

@@ -4,7 +4,6 @@ module.exports = {
 	author: `Tawnee`,
 	creator: `@stormcloud266`, // Your Twitter handle
 	siteUrl: `https://gatsby-starter-wyoming.netlify.app/`, // keep trailing slash
-	webFonts: ['Sacramento', 'Kumbh Sans:400'],
 	analytics: {
 		googleAnalyticsID: '',
 		googleTagManagerID: '',

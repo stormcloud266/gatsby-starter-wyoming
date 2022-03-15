@@ -5617,11 +5617,6 @@ gatsby-plugin-gdpr-cookies@^2.0.8:
   dependencies:
     "@babel/runtime" "^7.11.2"
 
-gatsby-plugin-google-fonts-with-attributes@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts-with-attributes/-/gatsby-plugin-google-fonts-with-attributes-1.0.8.tgz#712bfda830292534e42511e4c54f284e49e98e0f"
-  integrity sha512-SQlPKpzhKtpfkmZoNiFMdKhI54XNDyBABT8hNJa+VCM0/pGtnT9kewvNOTbcwG9xQ5R1K0ZG2HfF6q+n9+D1RQ==
-
 gatsby-plugin-image@^2.9.1:
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.9.1.tgz#007578c5cacc942cf921237633d6dee5ce658cc6"
