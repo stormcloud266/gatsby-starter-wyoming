@@ -114,16 +114,3 @@
 		}
 	}
 } // end of whenMedium
-
-// stop FOUT on load
-.header {
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-
-:global(html.wf-active),
-:global(html.wf-inactive) {
-	.header {
-		opacity: 1;
-	}
-}
