@@ -21,16 +21,3 @@
 .title {
 	font-size: clamp(#{$font-size-7}, 7.5vw, #{$font-size-9});
 }
-
-// stop FOUT on load
-.title {
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-
-:global(html.wf-active),
-:global(html.wf-inactive) {
-	.title {
-		opacity: 1;
-	}
-}
